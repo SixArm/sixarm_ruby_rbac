@@ -1,0 +1,2 @@
+class PermissionFound < StandardError
+end

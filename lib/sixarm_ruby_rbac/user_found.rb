@@ -1,0 +1,2 @@
+class UserFound < StandardError
+end

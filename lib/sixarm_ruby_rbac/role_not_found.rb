@@ -1,0 +1,2 @@
+class RoleNotFound < StandardError
+end
