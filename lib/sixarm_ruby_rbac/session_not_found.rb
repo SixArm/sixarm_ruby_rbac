@@ -1,2 +1,0 @@
-class SessionNotFound < StandardError
-end

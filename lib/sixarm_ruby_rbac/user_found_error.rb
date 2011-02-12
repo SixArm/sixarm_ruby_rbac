@@ -1,0 +1,2 @@
+class UserFoundError < StandardError
+end

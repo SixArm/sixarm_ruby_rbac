@@ -1,2 +1,0 @@
-class SessionNotOwnedByUser < StandardError
-end

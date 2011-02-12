@@ -1,0 +1,2 @@
+class OperationFoundError < StandardError
+end

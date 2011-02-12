@@ -1,3 +1,0 @@
-class OperationNotFound < StandardError
-end
-

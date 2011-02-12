@@ -1,2 +1,0 @@
-class UserFound < StandardError
-end

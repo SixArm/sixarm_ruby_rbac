@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'sixarm_ruby_role_based_access_control'
+require 'sixarm_ruby_rbac'
 
 class RoleBasedAccessControlTest < Test::Unit::TestCase
 
@@ -108,7 +108,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
 
   def test_add_user_failure_because_user_is_duplicate
     @rbac.add_user(@user)
-    assert_raise UserFound do
+    assert_raise UserFoundError do
       @rbac.add_user(@user)
     end
   end
@@ -121,7 +121,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   end
 
   def test_delete_user_failure_because_user_not_found
-    assert_raise UserNotFound do
+    assert_raise UserNotFoundError do
       @rbac.delete_user(@user)
     end
   end
@@ -134,7 +134,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
 
   def test_add_role_failure_because_role_is_duplicate
     @rbac.add_role(@role)
-    assert_raise RoleFound do 
+    assert_raise RoleFoundError do 
       @rbac.add_role(@role)
     end
   end
@@ -147,7 +147,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   end
 
   def test_delete_role_failure_because_role_not_found
-    assert_raise RoleNotFound do
+    assert_raise RoleNotFoundError do
       @rbac.delete_role(@role)
     end
   end
@@ -162,14 +162,14 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
 
   def test_assign_user_failure_because_user_not_found
     @rbac.add_role(@role)
-    assert_raise UserNotFound do
+    assert_raise UserNotFoundError do
       @rbac.assign_user(@user, @role)
     end
   end
 
   def test_assign_user_failure_because_role_not_found
     @rbac.add_user(@user)
-    assert_raise RoleNotFound do
+    assert_raise RoleNotFoundError do
       @rbac.assign_user(@user, @role)
     end
   end
@@ -186,7 +186,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   def test_deassign_user_failure_because_assignment_not_found
     @rbac.add_user(@user)
     @rbac.add_role(@role)
-    assert_raise AssignmentNotFound do
+    assert_raise AssignmentNotFoundError do
       @rbac.deassign_user(@user, @role)
     end
   end
@@ -200,13 +200,13 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
 
   def test_grant_permission_failure_because_operation_object_pair_does_not_represent_permission
     @rbac.add_role(@role)
-    assert_raise OperationObjectPairDoesNotRepresentPermission do
+    assert_raise OperationObjectPairDoesNotRepresentPermissionError do
       @rbac.grant_permission(@fake, @fake, @role)
     end
   end
 
   def test_grant_permission_failure_because_role_not_found
-    assert_raise RoleNotFound do
+    assert_raise RoleNotFoundError do
       @rbac.grant_permission(@operation, @object, @role)
     end
   end
@@ -221,13 +221,13 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
 
   def test_revoke_permission_failure_because_operation_object_pair_does_not_represent_permission
     @rbac.add_role(@role)
-    assert_raise OperationObjectPairDoesNotRepresentPermission do 
+    assert_raise OperationObjectPairDoesNotRepresentPermissionError do 
       @rbac.revoke_permission(@fake, @fake, @role)
     end
   end
 
   def test_revoke_permission_failure_because_role_not_found
-    assert_raise RoleNotFound do 
+    assert_raise RoleNotFoundError do 
       @rbac.revoke_permission(@operation, @object, @role)
     end
   end
@@ -240,7 +240,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   end
 
   def test_create_session_failure_because_user_not_found
-    assert_raise UserNotFound do 
+    assert_raise UserNotFoundError do 
       @rbac.create_session(@user,  @session)
     end
   end
@@ -285,7 +285,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
     # Now try to repurpose the session to the other user;
     # this fails because the session's active role set
     # is a not a subset of the user's role set.
-    assert_raise SessionActiveRoleSetIsNotSubsetOfUserRoleSet do 
+    assert_raise SessionActiveRoleSetIsNotSubsetOfUserRoleSetError do 
       @rbac.create_session(user2,  @session)
     end
   end
@@ -300,7 +300,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
 
   def test_delete_session_failure_because_session_not_found
     @rbac.add_user(@user)
-    assert_raise SessionNotFound do
+    assert_raise SessionNotFoundError do
       @rbac.delete_session(@user,  @session)
     end
   end
@@ -315,7 +315,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   def test_add_active_role_failure_because_role_not_assigned_to_user
     setup_add_active_role
     @rbac.add_role(@role_2)
-    assert_raise AssignmentNotFound do 
+    assert_raise AssignmentNotFoundError do 
       @rbac.add_active_role(@user, @session, @role_2)
     end
   end
@@ -324,7 +324,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
     setup_add_active_role
     @rbac.add_user(@user_2)
     @rbac.assign_user(@user_2, @role)
-    assert_raise SessionNotOwnedByUser do 
+    assert_raise SessionNotOwnedByUserError do 
       @rbac.add_active_role(@user_2, @session, @role)
     end
   end
@@ -339,7 +339,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   def test_drop_active_role_failure_because_role_not_active_role
     setup_drop_active_role
     @rbac.add_role(@role_2)
-    assert_raise ActiveRoleNotFound do 
+    assert_raise ActiveRoleNotFoundError do 
       @rbac.drop_active_role(@user, @session, @role_2)
     end
   end
@@ -347,7 +347,7 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
   def test_drop_active_role_failure_because_session_not_owned_by_user
     setup_drop_active_role
     @rbac.add_user(@user_2)
-    assert_raise SessionNotOwnedByUser do 
+    assert_raise SessionNotOwnedByUserError do 
       @rbac.drop_active_role(@user_2, @session, @role)
     end
   end
@@ -367,21 +367,21 @@ __END__
 
   def test_check_access_failure_because_session_not_found
     setup_check_access    
-    assert_raise SessionNotFound do 
+    assert_raise SessionNotFoundError do 
       @rbac.check_access(@session_2, @operation, @object)
     end
   end
 
   def test_check_access_failure_because_operation_not_found
     setup_check_access
-    assert_raise OperationNotFound do 
+    assert_raise OperationNotFoundError do 
       @rbac.check_access(@session, @operation_2, @object)
     end
   end
 
   def test_check_access_failure_because_object_not_found
     setup_check_access
-    assert_raise ObjectNotFound do 
+    assert_raise ObjectNotFoundError do 
       @rbac.check_access(@session, @operation, @object_2)
     end
   end

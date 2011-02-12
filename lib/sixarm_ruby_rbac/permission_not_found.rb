@@ -1,2 +1,0 @@
-class PermissionNotFound < StandardError
-end

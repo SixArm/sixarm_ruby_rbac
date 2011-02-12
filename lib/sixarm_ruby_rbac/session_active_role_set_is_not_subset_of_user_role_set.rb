@@ -1,2 +1,0 @@
-class SessionActiveRoleSetIsNotSubsetOfUserRoleSet < StandardError
-end

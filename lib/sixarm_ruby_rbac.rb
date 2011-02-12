@@ -108,19 +108,19 @@ Possible future upgrades:
  'object','objects',
  'permission','permissions',
  'grant','grants',
- # Exceptions
- 'user_found','user_not_found',
- 'role_found','role_not_found',
- 'assignment_found','assignment_not_found',
- 'session_found','session_not_found',
- 'operation_found','operation_not_found',
- 'object_found','object_not_found',
- 'permission_found','permission_not_found',
- 'grant_found','grant_not_found',
- 'active_role_found','active_role_not_found',
- 'operation_object_pair_does_not_represent_permission',
- 'session_active_role_set_is_not_subset_of_user_role_set',
- 'session_not_owned_by_user'
+ # Errors
+ 'user_found_error','user_not_found_error',
+ 'role_found_error','role_not_found_error',
+ 'assignment_found_error','assignment_not_found_error',
+ 'session_found_error','session_not_found_error',
+ 'operation_found_error','operation_not_found_error',
+ 'object_found_error','object_not_found_error',
+ 'permission_found_error','permission_not_found_error',
+ 'grant_found_error','grant_not_found_error',
+ 'active_role_found_error','active_role_not_found_error',
+ 'operation_object_pair_does_not_represent_permission_error',
+ 'session_active_role_set_is_not_subset_of_user_role_set_error',
+ 'session_not_owned_by_user_error'
 ].map{|x|
   require File.dirname(__FILE__) + "/sixarm_ruby_rbac/#{x}.rb"
 }

@@ -1,2 +1,0 @@
-class GrantFound < StandardError
-end

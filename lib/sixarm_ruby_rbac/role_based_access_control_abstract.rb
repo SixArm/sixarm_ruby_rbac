@@ -30,7 +30,7 @@ class RoleBasedAccessControlAbstract
   # The new user does not own any session at the time of its creation.
 
   def add_user(user)
-    !users_include?(user) or raise UserFound.new([user, users].inspect) 
+    !users_include?(user) or raise UserFoundError, [user, users].inspect 
   end
 
 
@@ -46,7 +46,7 @@ class RoleBasedAccessControlAbstract
   # normally, or it could force its termination.
 
   def delete_user(user) 
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
   end
 
 
@@ -60,7 +60,7 @@ class RoleBasedAccessControlAbstract
   # Initially, no user or permission is assigned to the new role.
  
   def add_role(role)
-    !roles_include?(role) or raise RoleFound.new([role, roles].inspect)
+    !roles_include?(role) or raise RoleFoundError, [role, roles].inspect
   end
 
 
@@ -75,7 +75,7 @@ class RoleBasedAccessControlAbstract
   # delete the role from that session while allowing the session to continue.
 
   def delete_role(role)
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
   end
 
 
@@ -89,9 +89,9 @@ class RoleBasedAccessControlAbstract
   # The data set UA and the function assigned_users are updated to reflect the assignment.
 
   def assign_user(user, role)
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
-    !assignments_include?(user, role) or raise AssginmentNotFound.new([user, role, assignments].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
+    !assignments_include?(user, role) or raise AssginmentNotFoundError, [user, role, assignments].inspect
   end
 
 
@@ -107,9 +107,9 @@ class RoleBasedAccessControlAbstract
   # a session to terminate normally, could force its termination, or could inactivate the role.
 
   def deassign_user(user, role)
-    users_include?(user) or raise UserNotFound.new(user)
-    roles_include?(role) or raise RoleNotFound.new(role)
-    assignments_include?(user, role) or raise AssignmentNotFound.new([user, role, assignments].inspect)
+    users_include?(user) or raise UserNotFoundError, user.inspect
+    roles_include?(role) or raise RoleNotFoundError, role.inspect
+    assignments_include?(user, role) or raise AssignmentNotFoundError, [user, role, assignments].inspect
   end
 
 
@@ -123,8 +123,8 @@ class RoleBasedAccessControlAbstract
   # - the role is a member of the ROLES data set. 
 
   def grant_permission(operation, object, role)
-    operation_object_pair_represents_permission?(operation, object) or raise OperationObjectPairDoesNotRepresentPermission.new([operation, object].inspect)
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
+    operation_object_pair_represents_permission?(operation, object) or raise OperationObjectPairDoesNotRepresentPermissionError, [operation, object].inspect
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
   end
 
 
@@ -138,8 +138,8 @@ class RoleBasedAccessControlAbstract
   # - the role is a member of the ROLES data set. 
 
   def revoke_permission(operation, object, role)
-    operation_object_pair_represents_permission?(operation, object) or raise OperationObjectPairDoesNotRepresentPermission.new([operation, object, permissions].inspect)
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
+    operation_object_pair_represents_permission?(operation, object) or raise OperationObjectPairDoesNotRepresentPermissionError, [operation, object, permissions].inspect
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
   end
 
 
@@ -153,8 +153,8 @@ class RoleBasedAccessControlAbstract
   # groups that represent those roles.
 
   def create_session(user, session)
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
-    session_active_role_set_is_subset_of_user_role_set?(session, user) or raise SessionActiveRoleSetIsNotSubsetOfUserRoleSet.new([user, session].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
+    session_active_role_set_is_subset_of_user_role_set?(session, user) or raise SessionActiveRoleSetIsNotSubsetOfUserRoleSetError, [user, session].inspect
   end
 
 
@@ -166,9 +166,9 @@ class RoleBasedAccessControlAbstract
   # - the session is owned by the given user
 
   def delete_session(user, session)
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
-    sessions_include?(session) or raise SessionNotFound.new([session, sessions].inspect)
-    user_owns_session?(user, session) or raise SessionNotOwnedByUser.new([user, session].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
+    sessions_include?(session) or raise SessionNotFoundError, [session, sessions].inspect
+    user_owns_session?(user, session) or raise SessionNotOwnedByUserError, [user, session].inspect
   end
 
 
@@ -184,11 +184,11 @@ class RoleBasedAccessControlAbstract
   # In an implementation, the new active role might be a group that corresponds to that role.
 
   def add_active_role(user, session, role)
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
-    sessions_include?(session) or raise SessionNotFound.new([session, sessions].inspect)
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
-    assignments_include?(user, role) or raise AssignmentNotFound.new([user, role, assignments].inspect)
-    user_owns_session?(user, session) or raise SessionNotOwnedByUser.new([user, session, sessions].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
+    sessions_include?(session) or raise SessionNotFoundError, [session, sessions].inspect
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
+    assignments_include?(user, role) or raise AssignmentNotFoundError, [user, role, assignments].inspect
+    user_owns_session?(user, session) or raise SessionNotOwnedByUserError, [user, session, sessions].inspect
   end
 
 
@@ -202,11 +202,11 @@ class RoleBasedAccessControlAbstract
   # - the role is an active role of that session. 
 
   def drop_active_role(user, session, role)
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
-    sessions_include?(session) or raise SessionNotFound.new([session, sessions].inspect)
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
-    user_owns_session?(user, session) or raise SessionNotOwnedByUser.new([user, session, sessions].inspect)
-    active_roles_include?(role, session) or raise ActiveRoleNotFound.new([role, session, sessions].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
+    sessions_include?(session) or raise SessionNotFoundError, [session, sessions].inspect
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
+    user_owns_session?(user, session) or raise SessionNotOwnedByUserError, [user, session, sessions].inspect
+    active_roles_include?(role, session) or raise ActiveRoleNotFoundError, [role, session, sessions].inspect
   end
 
 
@@ -225,9 +225,9 @@ class RoleBasedAccessControlAbstract
   # their permissions as registered in the object’s access control list. 
 
   def check_access(session, operation, object) #=> boolean 
-    sessions_include?(session) or raise SessionNotFound.new([session, sessions].inspect)
-    operations_include?(operation) or raise OperationNotFound.new([operation, operations].inspect)
-    objects_include?(object) or raise ObjectNotFound.new([object, objects].inspect)
+    sessions_include?(session) or raise SessionNotFoundError, [session, sessions].inspect
+    operations_include?(operation) or raise OperationNotFoundError, [operation, operations].inspect
+    objects_include?(object) or raise ObjectNotFoundError, [object, objects].inspect
   end
 
 
@@ -237,7 +237,7 @@ class RoleBasedAccessControlAbstract
   # - the role is a member of the ROLES data set 
 
   def assigned_users(role) #=> users
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
   end
 
 
@@ -247,7 +247,7 @@ class RoleBasedAccessControlAbstract
   # - the user is a member of the USERS data set
   
   def assigned_roles(user) #=> roles
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
   end
 
 
@@ -258,7 +258,7 @@ class RoleBasedAccessControlAbstract
   # - the role is a member of the ROLES data set
 
   def role_permissions(role) #=> permissions
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
   end
 
 
@@ -268,7 +268,7 @@ class RoleBasedAccessControlAbstract
   # - the user is a member of the USERS data set.
 
   def user_permissions(user) #=> permissions
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
   end
 
 
@@ -278,7 +278,7 @@ class RoleBasedAccessControlAbstract
   # - the session identifier is a member of the SESSIONS data set
 
   def session_roles(session) #=> roles
-    sessions_include?(session) or raise SessionNotFound.new([session, sessions].inspect)
+    sessions_include?(session) or raise SessionNotFoundError, [session, sessions].inspect
   end
 
 
@@ -289,7 +289,7 @@ class RoleBasedAccessControlAbstract
   # - the session identifier is a member of the SESSIONS data set
 
   def session_permissions(session) #=> permissions
-    sessions_include?(session) or raise SessionNotFound.new([session, sessions].inspect)
+    sessions_include?(session) or raise SessionNotFoundError, [session, sessions].inspect
   end
 
 
@@ -301,8 +301,8 @@ class RoleBasedAccessControlAbstract
   # - the object is a member of the OBJS data set
 
   def role_operations_on_object(role, object) #=> operations
-    roles_include?(role) or raise RoleNotFound.new([role, roles].inspect)
-    objects_include?(object) or raise ObjectNotFound.new([object, objects].inspect)
+    roles_include?(role) or raise RoleNotFoundError, [role, roles].inspect
+    objects_include?(object) or raise ObjectNotFoundError, [object, objects].inspect
   end
 
 
@@ -314,8 +314,8 @@ class RoleBasedAccessControlAbstract
   # - the object is a member of the OBJS data set
 
   def user_operations_on_object(user, object) #=> operations
-    users_include?(user) or raise UserNotFound.new([user, users].inspect)
-    objects_include?(object) or raise ObjectNotFound.new([object, objects].inspect)
+    users_include?(user) or raise UserNotFoundError, [user, users].inspect
+    objects_include?(object) or raise ObjectNotFoundError, [object, objects].inspect
   end
 
 

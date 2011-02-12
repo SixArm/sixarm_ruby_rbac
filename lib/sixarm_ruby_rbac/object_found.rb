@@ -1,2 +1,0 @@
-class ObjectFound < StandardError
-end

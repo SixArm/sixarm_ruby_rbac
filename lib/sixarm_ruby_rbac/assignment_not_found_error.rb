@@ -1,0 +1,3 @@
+class AssignmentNotFoundError < StandardError
+end
+

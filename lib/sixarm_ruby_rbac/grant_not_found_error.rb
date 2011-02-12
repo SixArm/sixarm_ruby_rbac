@@ -1,0 +1,3 @@
+class GrantNotFoundError < StandardError
+end
+

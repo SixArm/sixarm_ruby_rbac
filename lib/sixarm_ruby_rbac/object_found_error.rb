@@ -1,0 +1,2 @@
+class ObjectFoundError < StandardError
+end

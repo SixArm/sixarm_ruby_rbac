@@ -1,0 +1,2 @@
+class SessionActiveRoleSetIsNotSubsetOfUserRoleSetError < StandardError
+end

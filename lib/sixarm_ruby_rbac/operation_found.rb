@@ -1,2 +1,0 @@
-class OperationFound < StandardError
-end

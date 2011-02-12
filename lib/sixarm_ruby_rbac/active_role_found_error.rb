@@ -1,0 +1,2 @@
+class ActiveRoleFoundError < StandardError
+end

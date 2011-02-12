@@ -1,2 +1,0 @@
-class AssignmentFound < StandardError
-end

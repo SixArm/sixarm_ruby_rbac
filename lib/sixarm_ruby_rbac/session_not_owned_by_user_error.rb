@@ -1,0 +1,2 @@
+class SessionNotOwnedByUserError < StandardError
+end

@@ -1,2 +1,0 @@
-class RoleNotFound < StandardError
-end

@@ -1,0 +1,3 @@
+class OperationNotFoundError < StandardError
+end
+
