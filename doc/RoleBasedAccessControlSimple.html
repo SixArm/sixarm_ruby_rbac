@@ -1,0 +1,2698 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Class: RoleBasedAccessControlSimple</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (R)</a> &raquo; 
+    
+    
+    <span class="title">RoleBasedAccessControlSimple</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: RoleBasedAccessControlSimple
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="RoleBasedAccessControlAbstract.html" title="RoleBasedAccessControlAbstract (class)">RoleBasedAccessControlAbstract</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="RoleBasedAccessControlAbstract.html" title="RoleBasedAccessControlAbstract (class)">RoleBasedAccessControlAbstract</a></span></li>
+          
+            <li class="next">RoleBasedAccessControlSimple</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/sixarm_ruby_rbac/role_based_access_control_simple.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  
+  
+  
+  
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#active_roles-instance_method" title="#active_roles (instance method)">- (Object) <strong>active_roles</strong>(session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> roles.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#active_roles_include%3F-instance_method" title="#active_roles_include? (instance method)">- (Boolean) <strong>active_roles_include?</strong>(role, session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_active_role-instance_method" title="#add_active_role (instance method)">- (Object) <strong>add_active_role</strong>(user, session, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_role-instance_method" title="#add_role (instance method)">- (Object) <strong>add_role</strong>(role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_user-instance_method" title="#add_user (instance method)">- (Object) <strong>add_user</strong>(user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assign_user-instance_method" title="#assign_user (instance method)">- (Object) <strong>assign_user</strong>(user, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assigned_roles-instance_method" title="#assigned_roles (instance method)">- (Object) <strong>assigned_roles</strong>(user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> roles.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assigned_users-instance_method" title="#assigned_users (instance method)">- (Object) <strong>assigned_users</strong>(role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> users.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assignments-instance_method" title="#assignments (instance method)">- (Object) <strong>assignments</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> assignments.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assignments%3D-instance_method" title="#assignments= (instance method)">- (Object) <strong>assignments=</strong>(assignments) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#assignments_include%3F-instance_method" title="#assignments_include? (instance method)">- (Boolean) <strong>assignments_include?</strong>(user, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#check_access-instance_method" title="#check_access (instance method)">- (Object) <strong>check_access</strong>(session, operation, object) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> boolean.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_session-instance_method" title="#create_session (instance method)">- (Object) <strong>create_session</strong>(user, session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#deassign_user-instance_method" title="#deassign_user (instance method)">- (Object) <strong>deassign_user</strong>(user, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_role-instance_method" title="#delete_role (instance method)">- (Object) <strong>delete_role</strong>(role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_session-instance_method" title="#delete_session (instance method)">- (Object) <strong>delete_session</strong>(user, session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_user-instance_method" title="#delete_user (instance method)">- (Object) <strong>delete_user</strong>(user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#drop_active_role-instance_method" title="#drop_active_role (instance method)">- (Object) <strong>drop_active_role</strong>(user, session, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#grant_permission-instance_method" title="#grant_permission (instance method)">- (Object) <strong>grant_permission</strong>(operation, object, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (RoleBasedAccessControlSimple) <strong>initialize</strong> </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+A new instance of RoleBasedAccessControlSimple.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#operation_object_pair_represents_permission%3F-instance_method" title="#operation_object_pair_represents_permission? (instance method)">- (Boolean) <strong>operation_object_pair_represents_permission?</strong>(operation, object) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#permissions-instance_method" title="#permissions (instance method)">- (Object) <strong>permissions</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> permissions.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#permissions%3D-instance_method" title="#permissions= (instance method)">- (Object) <strong>permissions=</strong>(permissions) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#permissions_include%3F-instance_method" title="#permissions_include? (instance method)">- (Boolean) <strong>permissions_include?</strong>(operation, object) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#revoke_permission-instance_method" title="#revoke_permission (instance method)">- (Object) <strong>revoke_permission</strong>(operation, object, role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#role_operations_on_object-instance_method" title="#role_operations_on_object (instance method)">- (Object) <strong>role_operations_on_object</strong>(role, object) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> operations.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#role_permissions-instance_method" title="#role_permissions (instance method)">- (Object) <strong>role_permissions</strong>(role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> permissions.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#roles-instance_method" title="#roles (instance method)">- (Object) <strong>roles</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> roles.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#roles%3D-instance_method" title="#roles= (instance method)">- (Object) <strong>roles=</strong>(roles) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#roles_include%3F-instance_method" title="#roles_include? (instance method)">- (Boolean) <strong>roles_include?</strong>(role) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#session_active_role_set_is_subset_of_user_role_set%3F-instance_method" title="#session_active_role_set_is_subset_of_user_role_set? (instance method)">- (Boolean) <strong>session_active_role_set_is_subset_of_user_role_set?</strong>(session, user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#session_permissions-instance_method" title="#session_permissions (instance method)">- (Object) <strong>session_permissions</strong>(session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> permissions.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#session_roles-instance_method" title="#session_roles (instance method)">- (Object) <strong>session_roles</strong>(session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> roles.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sessions-instance_method" title="#sessions (instance method)">- (Object) <strong>sessions</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> sessions.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sessions%3D-instance_method" title="#sessions= (instance method)">- (Object) <strong>sessions=</strong>(sessions) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sessions_include%3F-instance_method" title="#sessions_include? (instance method)">- (Boolean) <strong>sessions_include?</strong>(session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_operations_on_object-instance_method" title="#user_operations_on_object (instance method)">- (Object) <strong>user_operations_on_object</strong>(user, object) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> operations.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_owns_session%3F-instance_method" title="#user_owns_session? (instance method)">- (Boolean) <strong>user_owns_session?</strong>(user, session) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_permissions-instance_method" title="#user_permissions (instance method)">- (Object) <strong>user_permissions</strong>(user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> permissions.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users-instance_method" title="#users (instance method)">- (Object) <strong>users</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><h1>> users.</h1>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users%3D-instance_method" title="#users= (instance method)">- (Object) <strong>users=</strong>(users) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users_include%3F-instance_method" title="#users_include? (instance method)">- (Boolean) <strong>users_include?</strong>(user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="RoleBasedAccessControlAbstract.html" title="RoleBasedAccessControlAbstract (class)">RoleBasedAccessControlAbstract</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="RoleBasedAccessControlAbstract.html#objects-instance_method" title="RoleBasedAccessControlAbstract#objects (method)">#objects</a></span>, <span class='object_link'><a href="RoleBasedAccessControlAbstract.html#objects%3D-instance_method" title="RoleBasedAccessControlAbstract#objects= (method)">#objects=</a></span>, <span class='object_link'><a href="RoleBasedAccessControlAbstract.html#objects_include%3F-instance_method" title="RoleBasedAccessControlAbstract#objects_include? (method)">#objects_include?</a></span>, <span class='object_link'><a href="RoleBasedAccessControlAbstract.html#operations-instance_method" title="RoleBasedAccessControlAbstract#operations (method)">#operations</a></span>, <span class='object_link'><a href="RoleBasedAccessControlAbstract.html#operations%3D-instance_method" title="RoleBasedAccessControlAbstract#operations= (method)">#operations=</a></span>, <span class='object_link'><a href="RoleBasedAccessControlAbstract.html#operations_include%3F-instance_method" title="RoleBasedAccessControlAbstract#operations_include? (method)">#operations_include?</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="RoleBasedAccessControlSimple (class)">RoleBasedAccessControlSimple</a></span></tt>) <strong>initialize</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+A new instance of RoleBasedAccessControlSimple
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14
+15
+16
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 12</span>
+
+<span class='kw'>def</span> <span class='id initialize'>initialize</span>
+  <span class='ivar'>@users</span><span class='op'>=</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Users</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@roles</span><span class='op'>=</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Roles</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@sessions</span><span class='op'>=</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Sessions</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@permissions</span><span class='op'>=</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Permissions</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@assignments</span><span class='op'>=</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Assignments</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@grants</span><span class='op'>=</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Grants</span><span class='period'>.</span><span class='id new'>new</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="active_roles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>active_roles</strong>(session) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> roles</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+226
+227
+228
+229</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 226</span>
+
+<span class='kw'>def</span> <span class='id active_roles'>active_roles</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id session'>session</span><span class='period'>.</span><span class='id active_roles'>active_roles</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="active_roles_include?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>active_roles_include?</strong>(role, session) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+231
+232
+233
+234</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 231</span>
+
+<span class='kw'>def</span> <span class='id active_roles_include?'>active_roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id session'>session</span><span class='period'>.</span><span class='id active_roles'>active_roles</span><span class='period'>.</span><span class='id include?'>include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="add_active_role-instance_method">
+  
+    - (<tt>Object</tt>) <strong>add_active_role</strong>(user, session, role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id add_active_role'>add_active_role</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id session'>session</span><span class='period'>.</span><span class='id active_roles'>active_roles</span><span class='period'>.</span><span class='id add'>add</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="add_role-instance_method">
+  
+    - (<tt>Object</tt>) <strong>add_role</strong>(role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+33
+34
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 33</span>
+
+<span class='kw'>def</span> <span class='id add_role'>add_role</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='ivar'>@roles</span><span class='period'>.</span><span class='id add'>add</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="add_user-instance_method">
+  
+    - (<tt>Object</tt>) <strong>add_user</strong>(user) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 21</span>
+
+<span class='kw'>def</span> <span class='id add_user'>add_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='ivar'>@users</span><span class='period'>.</span><span class='id add'>add</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="assign_user-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assign_user</strong>(user, role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45
+46
+47
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 45</span>
+
+<span class='kw'>def</span> <span class='id assign_user'>assign_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id assignment'>assignment</span> <span class='op'>=</span> <span class='ivar'>@assignments</span><span class='period'>.</span><span class='id find_or_create_with_user_and_role'>find_or_create_with_user_and_role</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>assign_user: @assignments.find_or_create_with_user_and_role: </span><span class='tstring_end'>'</span></span> <span class='op'>+</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='ivar'>@assignments</span><span class='period'>.</span><span class='id add'>add</span><span class='lparen'>(</span><span class='id assignment'>assignment</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="assigned_roles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assigned_roles</strong>(user) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> roles</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+113
+114
+115
+116</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 113</span>
+
+<span class='kw'>def</span> <span class='id assigned_roles'>assigned_roles</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='id assignments_with_user'>assignments_with_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id assignment'>assignment</span><span class='op'>|</span> <span class='id assignment'>assignment</span><span class='period'>.</span><span class='id role'>role</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="assigned_users-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assigned_users</strong>(role) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> users</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108
+109
+110
+111</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 108</span>
+
+<span class='kw'>def</span> <span class='id assigned_users'>assigned_users</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='comment'>#=&gt; users
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id assignments_with_role'>assignments_with_role</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id assignment'>assignment</span><span class='op'>|</span> <span class='id assignment'>assignment</span><span class='period'>.</span><span class='id user'>user</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="assignments-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assignments</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> assignments</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+236
+237
+238
+239</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 236</span>
+
+<span class='kw'>def</span> <span class='id assignments'>assignments</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; assignments
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@assignments</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="assignments=-instance_method">
+  
+    - (<tt>Object</tt>) <strong>assignments=</strong>(assignments) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+241
+242
+243
+244
+245</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 241</span>
+
+<span class='kw'>def</span> <span class='id assignments='>assignments=</span><span class='lparen'>(</span><span class='id assignments'>assignments</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id assignments'>assignments</span><span class='rparen'>)</span>
+  <span class='ivar'>@assignments</span><span class='op'>=</span><span class='id assignments'>assignments</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="assignments_include?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>assignments_include?</strong>(user, role) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+247
+248
+249
+250</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 247</span>
+
+<span class='kw'>def</span> <span class='id assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span> 
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@assignments</span><span class='period'>.</span><span class='id any?'>any?</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _assignment'>_assignment</span><span class='op'>|</span> <span class='id _assignment'>_assignment</span><span class='period'>.</span><span class='id user'>user</span> <span class='op'>==</span> <span class='id user'>user</span> <span class='kw'>and</span> <span class='id _assignment'>_assignment</span><span class='period'>.</span><span class='id role'>role</span> <span class='op'>==</span> <span class='id role'>role</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="check_access-instance_method">
+  
+    - (<tt>Object</tt>) <strong>check_access</strong>(session, operation, object) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> boolean</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100
+101
+102
+103
+104
+105
+106</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 100</span>
+
+<span class='kw'>def</span> <span class='id check_access'>check_access</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; boolean 
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='id roles'>roles</span> <span class='op'>=</span> <span class='id active_roles'>active_roles</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='id permission'>permission</span> <span class='op'>=</span> <span class='ivar'>@permissions</span><span class='period'>.</span><span class='id find_with_operation_and_object'>find_with_operation_and_object</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id permissions'>permissions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='id grants'>grants</span> <span class='op'>=</span> <span class='ivar'>@grants</span><span class='period'>.</span><span class='id find_with_permission'>find_with_permission</span><span class='lparen'>(</span><span class='id permission'>permission</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id permission'>permission</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id user'>user</span><span class='period'>.</span><span class='id permissions'>permissions</span><span class='period'>.</span><span class='id include?'>include?</span><span class='lparen'>(</span><span class='id permission'>permission</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="create_session-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create_session</strong>(user, session) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78
+79
+80</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id create_session'>create_session</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='ivar'>@sessions</span><span class='period'>.</span><span class='id add'>add</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='id session'>session</span><span class='period'>.</span><span class='id user'>user</span><span class='op'>=</span><span class='id user'>user</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="deassign_user-instance_method">
+  
+    - (<tt>Object</tt>) <strong>deassign_user</strong>(user, role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id deassign_user'>deassign_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id assignment'>assignment</span> <span class='op'>=</span> <span class='ivar'>@assignments</span><span class='period'>.</span><span class='id find_with_user_and_role'>find_with_user_and_role</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='ivar'>@assignments</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='id assignment'>assignment</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="delete_role-instance_method">
+  
+    - (<tt>Object</tt>) <strong>delete_role</strong>(role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id delete_role'>delete_role</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='ivar'>@roles</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="delete_session-instance_method">
+  
+    - (<tt>Object</tt>) <strong>delete_session</strong>(user, session) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85
+86</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id delete_session'>delete_session</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='ivar'>@sessions</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="delete_user-instance_method">
+  
+    - (<tt>Object</tt>) <strong>delete_user</strong>(user) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='id delete_user'>delete_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> 
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='ivar'>@users</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="drop_active_role-instance_method">
+  
+    - (<tt>Object</tt>) <strong>drop_active_role</strong>(user, session, role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96
+97
+98</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 94</span>
+
+<span class='kw'>def</span> <span class='id drop_active_role'>drop_active_role</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id session'>session</span><span class='period'>.</span><span class='id active_roles'>active_roles</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="grant_permission-instance_method">
+  
+    - (<tt>Object</tt>) <strong>grant_permission</strong>(operation, object, role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61
+62
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='id grant_permission'>grant_permission</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id permission'>permission</span> <span class='op'>=</span> <span class='ivar'>@permissions</span><span class='period'>.</span><span class='id find_or_create_with_operation_and_object'>find_or_create_with_operation_and_object</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='id grant'>grant</span> <span class='op'>=</span> <span class='ivar'>@grants</span><span class='period'>.</span><span class='id find_or_create_with_permission_and_role'>find_or_create_with_permission_and_role</span><span class='lparen'>(</span><span class='id permission'>permission</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id permission'>permission</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='ivar'>@grants</span><span class='period'>.</span><span class='id add'>add</span><span class='lparen'>(</span><span class='id grant'>grant</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="operation_object_pair_represents_permission?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>operation_object_pair_represents_permission?</strong>(operation, object) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+205
+206
+207
+208</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 205</span>
+
+<span class='kw'>def</span> <span class='id operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='lparen'>(</span><span class='id operation'>operation</span><span class='period'>.</span><span class='id kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Operation</span><span class='rparen'>)</span> <span class='kw'>and</span> <span class='id object'>object</span><span class='period'>.</span><span class='id kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Object</span><span class='rparen'>)</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="permissions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>permissions</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> permissions</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+189
+190
+191
+192</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 189</span>
+
+<span class='kw'>def</span> <span class='id permissions'>permissions</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@permissions</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="permissions=-instance_method">
+  
+    - (<tt>Object</tt>) <strong>permissions=</strong>(permissions) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+194
+195
+196
+197
+198</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 194</span>
+
+<span class='kw'>def</span> <span class='id permissions='>permissions=</span><span class='lparen'>(</span><span class='id permissions'>permissions</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id permissions'>permissions</span><span class='rparen'>)</span>
+  <span class='ivar'>@permissions</span><span class='op'>=</span><span class='id permissions'>permissions</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="permissions_include?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>permissions_include?</strong>(operation, object) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+200
+201
+202
+203</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 200</span>
+
+<span class='kw'>def</span> <span class='id permissions_include?'>permissions_include?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@permissions</span><span class='period'>.</span><span class='id any?'>any?</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _permission'>_permission</span><span class='op'>|</span> <span class='id _permission'>_permission</span><span class='period'>.</span><span class='id operation'>operation</span> <span class='op'>==</span> <span class='id operation'>operation</span> <span class='kw'>and</span> <span class='id _permission'>_permission</span><span class='period'>.</span><span class='id object'>object</span> <span class='op'>==</span> <span class='id object'>object</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="revoke_permission-instance_method">
+  
+    - (<tt>Object</tt>) <strong>revoke_permission</strong>(operation, object, role) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67
+68
+69
+70
+71
+72
+73</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id revoke_permission'>revoke_permission</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='id permission'>permission</span> <span class='op'>=</span> <span class='ivar'>@permissions</span><span class='period'>.</span><span class='id find_with_operation_and_object'>find_with_operation_and_object</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id permissions'>permissions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='id grant'>grant</span> <span class='op'>=</span> <span class='ivar'>@grants</span><span class='period'>.</span><span class='id find_with_permission_and_role'>find_with_permission_and_role</span><span class='lparen'>(</span><span class='id permission'>permission</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id first'>first</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id permission'>permission</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span><span class='rparen'>)</span>
+  <span class='ivar'>@grants</span><span class='period'>.</span><span class='id delete'>delete</span><span class='lparen'>(</span><span class='id grant'>grant</span><span class='rparen'>)</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="role_operations_on_object-instance_method">
+  
+    - (<tt>Object</tt>) <strong>role_operations_on_object</strong>(role, object) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> operations</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+139
+140
+141
+142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 139</span>
+
+<span class='kw'>def</span> <span class='id role_operations_on_object'>role_operations_on_object</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id role_permissions'>role_permissions</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _operation'>_operation</span><span class='comma'>,</span> <span class='id _object'>_object</span><span class='op'>|</span> <span class='id _object'>_object</span> <span class='op'>==</span> <span class='id object'>object</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _operation'>_operation</span><span class='comma'>,</span> <span class='id _object'>_object</span><span class='op'>|</span> <span class='id _object'>_object</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="role_permissions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>role_permissions</strong>(role) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> permissions</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+118
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 118</span>
+
+<span class='kw'>def</span> <span class='id role_permissions'>role_permissions</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='const'>RBAC</span><span class='op'>::</span><span class='const'>Grants</span><span class='period'>.</span><span class='id find_with_role'>find_with_role</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _grant'>_grant</span><span class='op'>|</span> <span class='id _grant'>_grant</span><span class='period'>.</span><span class='id permission'>permission</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="roles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>roles</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> roles</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+173
+174
+175
+176</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 173</span>
+
+<span class='kw'>def</span> <span class='id roles'>roles</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@roles</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="roles=-instance_method">
+  
+    - (<tt>Object</tt>) <strong>roles=</strong>(roles) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178
+179
+180
+181
+182</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 178</span>
+
+<span class='kw'>def</span> <span class='id roles='>roles=</span><span class='lparen'>(</span><span class='id roles'>roles</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id roles'>roles</span><span class='rparen'>)</span>
+  <span class='ivar'>@roles</span><span class='op'>=</span><span class='id roles'>roles</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="roles_include?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>roles_include?</strong>(role) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+184
+185
+186
+187</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 184</span>
+
+<span class='kw'>def</span> <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@roles</span><span class='period'>.</span><span class='id any?'>any?</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _role'>_role</span><span class='op'>|</span> <span class='id _role'>_role</span><span class='period'>.</span><span class='id name'>name</span> <span class='op'>==</span> <span class='id role'>role</span><span class='period'>.</span><span class='id name'>name</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="session_active_role_set_is_subset_of_user_role_set?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>session_active_role_set_is_subset_of_user_role_set?</strong>(session, user) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+252
+253
+254
+255
+256
+257</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 252</span>
+
+<span class='kw'>def</span> <span class='id session_active_role_set_is_subset_of_user_role_set?'>session_active_role_set_is_subset_of_user_role_set?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='id active_roles'>active_roles</span> <span class='op'>=</span> <span class='id session'>session</span><span class='period'>.</span><span class='id active_roles'>active_roles</span>
+  <span class='id user_roles'>user_roles</span> <span class='op'>=</span> <span class='const'>Set</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='ivar'>@assignments</span><span class='period'>.</span><span class='id select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _assignment'>_assignment</span><span class='op'>|</span> <span class='id _assignment'>_assignment</span><span class='period'>.</span><span class='id user'>user</span> <span class='op'>==</span> <span class='id user'>user</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _assignment'>_assignment</span><span class='op'>|</span> <span class='id _assignment'>_assignment</span><span class='period'>.</span><span class='id role'>role</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id active_roles'>active_roles</span><span class='period'>.</span><span class='id subset?'>subset?</span><span class='lparen'>(</span><span class='id user_roles'>user_roles</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="session_permissions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>session_permissions</strong>(session) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> permissions</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+134
+135
+136
+137</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 134</span>
+
+<span class='kw'>def</span> <span class='id session_permissions'>session_permissions</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id user_permissions'>user_permissions</span><span class='lparen'>(</span><span class='id session'>session</span><span class='period'>.</span><span class='id user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="session_roles-instance_method">
+  
+    - (<tt>Object</tt>) <strong>session_roles</strong>(session) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> roles</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+129
+130
+131
+132</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 129</span>
+
+<span class='kw'>def</span> <span class='id session_roles'>session_roles</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id assigned_roles'>assigned_roles</span><span class='lparen'>(</span><span class='id session'>session</span><span class='period'>.</span><span class='id user'>user</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sessions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sessions</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> sessions</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+210
+211
+212
+213</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 210</span>
+
+<span class='kw'>def</span> <span class='id sessions'>sessions</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; sessions
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@sessions</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sessions=-instance_method">
+  
+    - (<tt>Object</tt>) <strong>sessions=</strong>(sessions) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+215
+216
+217
+218
+219</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 215</span>
+
+<span class='kw'>def</span> <span class='id sessions='>sessions=</span><span class='lparen'>(</span><span class='id sessions'>sessions</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id sessions'>sessions</span><span class='rparen'>)</span>
+  <span class='ivar'>@sessions</span><span class='op'>=</span><span class='id sessions'>sessions</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="sessions_include?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>sessions_include?</strong>(session) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+221
+222
+223
+224</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 221</span>
+
+<span class='kw'>def</span> <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@sessions</span><span class='period'>.</span><span class='id any?'>any?</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _session'>_session</span><span class='op'>|</span> <span class='id _session'>_session</span><span class='period'>.</span><span class='id name'>name</span> <span class='op'>==</span> <span class='id session'>session</span><span class='period'>.</span><span class='id name'>name</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="user_operations_on_object-instance_method">
+  
+    - (<tt>Object</tt>) <strong>user_operations_on_object</strong>(user, object) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> operations</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 144</span>
+
+<span class='kw'>def</span> <span class='id user_operations_on_object'>user_operations_on_object</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id user_permissions'>user_permissions</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span><span class='period'>.</span><span class='id select'>select</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _operation'>_operation</span><span class='comma'>,</span> <span class='id _object'>_object</span><span class='op'>|</span> <span class='id _object'>_object</span> <span class='op'>==</span> <span class='id object'>object</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _object'>_object</span><span class='comma'>,</span> <span class='id _operations'>_operations</span><span class='op'>|</span> <span class='id _object'>_object</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="user_owns_session?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>user_owns_session?</strong>(user, session) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+259
+260
+261
+262</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 259</span>
+
+<span class='kw'>def</span> <span class='id user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id user'>user</span> <span class='op'>==</span> <span class='id session'>session</span><span class='period'>.</span><span class='id user'>user</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="user_permissions-instance_method">
+  
+    - (<tt>Object</tt>) <strong>user_permissions</strong>(user) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> permissions</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+123
+124
+125
+126
+127</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 123</span>
+
+<span class='kw'>def</span> <span class='id user_permissions'>user_permissions</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='id roles'>roles</span> <span class='op'>=</span> <span class='id assigned_roles'>assigned_roles</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@grants</span><span class='period'>.</span><span class='id find_with_roles'>find_with_roles</span><span class='lparen'>(</span><span class='id roles'>roles</span><span class='rparen'>)</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _permission'>_permission</span><span class='comma'>,</span> <span class='id _role'>_role</span><span class='op'>|</span> <span class='id _permission'>_permission</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="users-instance_method">
+  
+    - (<tt>Object</tt>) <strong>users</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <h1>> users</h1>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+157
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 157</span>
+
+<span class='kw'>def</span> <span class='id users'>users</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; users
+</span>  <span class='kw'>super</span><span class='lparen'>(</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@users</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="users=-instance_method">
+  
+    - (<tt>Object</tt>) <strong>users=</strong>(users) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+162
+163
+164
+165
+166</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 162</span>
+
+<span class='kw'>def</span> <span class='id users='>users=</span><span class='lparen'>(</span><span class='id users'>users</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id users'>users</span><span class='rparen'>)</span>
+  <span class='ivar'>@users</span><span class='op'>=</span><span class='id users'>users</span>
+  <span class='kw'>return</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="users_include?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>users_include?</strong>(user) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+168
+169
+170
+171</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_simple.rb', line 168</span>
+
+<span class='kw'>def</span> <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> 
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='ivar'>@users</span><span class='period'>.</span><span class='id any?'>any?</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id _user'>_user</span><span class='op'>|</span> <span class='id _user'>_user</span><span class='period'>.</span><span class='id name'>name</span> <span class='op'>==</span> <span class='id user'>user</span><span class='period'>.</span><span class='id name'>name</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Sat Feb 12 16:22:28 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.4 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>

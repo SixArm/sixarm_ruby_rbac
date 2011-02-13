@@ -4,7 +4,7 @@
 = SixArm.com » Ruby » Role Based Access Control for user authorization using ANSI INCITS 359-2004 standard
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright the original author; I merely made it into a gem.
+Copyright:: Copyright (c) 2009-2011 Joel Parker Henderson
 License:: See LICENSE.txt file
 
 Ruby interface for the Role Based Access Control (RBAC) specification:
