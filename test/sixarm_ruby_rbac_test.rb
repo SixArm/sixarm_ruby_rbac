@@ -90,6 +90,8 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
     @rbac.assign_user(@user, @role)
     @rbac.create_session(@user, @session)
     @rbac.add_active_role(@user, @session, @role)
+    @rbac.add_operation(@operation)
+    @rbac.add_object(@object)
     @rbac.grant_permission(@operation, @object, @role)
   end
 
@@ -352,11 +354,57 @@ class RoleBasedAccessControlTest < Test::Unit::TestCase
     end
   end
 
+  def test_add_operation_success
+    assert_nothing_raised do 
+      @rbac.add_operation(@operation)
+    end
+  end
 
-end
-__END__
+  def test_add_operation_failure_because_operation_is_duplicate
+    @rbac.add_operation(@operation)
+    assert_raise OperationFoundError do
+      @rbac.add_operation(@operation)
+    end
+  end
 
+  def test_delete_operation_success
+    @rbac.add_operation(@operation)
+    assert_nothing_raised do
+      @rbac.delete_operation(@operation)
+    end
+  end
 
+  def test_delete_operation_failure_because_operation_not_found
+    assert_raise OperationNotFoundError do
+      @rbac.delete_operation(@operation)
+    end
+  end
+
+  def test_add_object_success
+    assert_nothing_raised do 
+      @rbac.add_object(@object)
+    end
+  end
+
+  def test_add_object_failure_because_object_is_duplicate
+    @rbac.add_object(@object)
+    assert_raise ObjectFoundError do
+      @rbac.add_object(@object)
+    end
+  end
+
+  def test_delete_object_success
+    @rbac.add_object(@object)
+    assert_nothing_raised do
+      @rbac.delete_object(@object)
+    end
+  end
+
+  def test_delete_object_failure_because_object_not_found
+    assert_raise ObjectNotFoundError do
+      @rbac.delete_object(@object)
+    end
+  end
 
   def test_check_access_success
     setup_check_access
@@ -386,109 +434,105 @@ __END__
     end
   end
 
+
+
+
+end
+__END__
+
+
+
+
+
 !!!!!!!
   def test_assigned_users_success
-    rbac = RoleBasedAccessControlSimple.new
     assert_nothing_raised do 
-      rbac.assigned_users(@role)
+      @rbac.assigned_users(@role)
     end
   end
 
   def test_assigned_users_failure
-    rbac = RoleBasedAccessControlSimple.new
     assert_raise ArgumentError do 
-      rbac.assigned_users(@role)
+      @rbac.assigned_users(@role)
     end
   end
 
   def test_assigned_roles_success
-    rbac = RoleBasedAccessControlSimple.new
     assert_nothing_raised do 
-      rbac.assigned_roles(@user)
+      @rbac.assigned_roles(@user)
     end
   end
 
   def test_assigned_roles_failure
-    rbac = RoleBasedAccessControlSimple.new
     assert_raise ArgumentError do 
-      rbac.assigned_roles(@user)
+      @rbac.assigned_roles(@user)
     end
   end
 
   def test_user_permissions_success
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_user(@user)
+    @rbac.add_user(@user)
     assert_nothing_raised do 
-      rbac.user_permissions(@user)
+      @rbac.user_permissions(@user)
     end
   end
 
   def test_user_permissions_failure
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_user(@user)
+    @rbac.add_user(@user)
     assert_raise ArgumentError do 
-      rbac.user_permissions(@user)
+      @rbac.user_permissions(@user)
     end
   end
 
   def test_role_permissions_success
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_role(@role)
+    @rbac.add_role(@role)
     assert_nothing_raised do 
-      rbac.role_permissions(@role)
+      @rbac.role_permissions(@role)
     end
   end
 
   def test_role_permissions_failure
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_role(@role)
+    @rbac.add_role(@role)
     assert_raise ArgumentError do 
-      rbac.role_permissions(@role)
+      @rbac.role_permissions(@role)
     end
   end
 
   def test_session_permissions_success
-    rbac = RoleBasedAccessControlSimple.new
     assert_nothing_raised do
-      rbac.session_permissions(@session)
+      @rbac.session_permissions(@session)
     end
   end
 
   def test_session_permissions_failure
-    rbac = RoleBasedAccessControlSimple.new
     assert_raise ArgumentError do
-      rbac.session_permissions(@session)
+      @rbac.session_permissions(@session)
     end
   end
 
   def test_role_operations_on_object_success
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_role(@role)
+    @rbac.add_role(@role)
     assert_nothing_raised do
-      rbac.role_operations_on_object(@role, @object)
+      @rbac.role_operations_on_object(@role, @object)
     end
   end
 
   def test_role_operations_on_object_failure
-    rbac = RoleBasedAccessControlSimple.new
     assert_raise ArgumentError do
-      rbac.role_operations_on_object(@role, @object)
+      @rbac.role_operations_on_object(@role, @object)
     end
   end
 
   def test_user_operations_on_object_success
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_user(@user)
+    @rbac.add_user(@user)
     assert_nothing_raised do 
-      rbac.user_operations_on_object(@user, @object)
+      @rbac.user_operations_on_object(@user, @object)
     end
   end
 
   def test_user_operations_on_object_failure
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_user(@user)
+    @rbac.add_user(@user)
     assert_raise ArgumentError do 
-      rbac.user_operations_on_object(@user, @object)
+      @rbac.user_operations_on_object(@user, @object)
     end
   end
 
@@ -503,98 +547,84 @@ __END__
   #######################################################################################
 
   def test_users
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.users=@users
+    @rbac.users=@users
     #assert_equal(@users, rbac.users)
   end
 
   def test_users_include
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.users=@users
+    @rbac.users=@users
     #assert( rbac.users_include?(@user))
     #assert(!rbac.users_include?('foo'))
   end
 
   def test_roles
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.roles=@roles
+    @rbac.roles=@roles
     #assert_equal(roles, rbac.roles)
   end
 
   def test_roles_include
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.roles=@roles
+    @rbac.roles=@roles
     #assert( rbac.roles_include?(@role))
     #assert(!rbac.roles_include?('foo'))
   end
 
   def test_permissions
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.permissions=@permissions
+    @rbac.permissions=@permissions
     #assert_equal(@permissions, rbac.permissions)
   end
 
   def test_permissions_include
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.permissions=@permissions
+    @rbac.permissions=@permissions
     #assert( rbac.permissions_include?(@permission))
     #assert(!rbac.permissions_include?('foo'))
   end
 
   def test_sessions
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.sessions=@sessions
+    @rbac.sessions=@sessions
     #assert_equal(sessions, rbac.sessions)
   end
 
   def test_sessions_include
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.sessions=@sessions
+    @rbac.sessions=@sessions
     #assert( rbac.sessions_include?(@session))
     #assert(!rbac.sessions_include?('foo'))
   end
 
   def test_active_roles
-    rbac = RoleBasedAccessControlSimple.new
     @active_roles.each{|role| 
-      rbac.add_role(role)
-      rbac.add_active_role(@user, @session, role)
+      @rbac.add_role(role)
+      @rbac.add_active_role(@user, @session, role)
     }
     #assert_equal(@active_roles, rbac.active_roles)
   end
 
   def test_active_roles_include
-    rbac = RoleBasedAccessControlSimple.new
     @active_roles.each{|role|
-      rbac.add_role(role)
-      rbac.add_active_role(@user, @session, role)
+      @rbac.add_role(role)
+      @rbac.add_active_role(@user, @session, role)
     }
     #assert( rbac.active_roles_include?(@active_role))
     #assert(!rbac.active_roles_include?('foo'))
   end
 
   def test_user_role_assignments
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.user_role_assignments=@user_role_assignments
+    @rbac.user_role_assignments=@user_role_assignments
     #assert_equal(@user_role_assignments, rbac.user_role_assignments)
   end
 
   def test_user_role_assignments_include
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.user_role_assignments=@user_role_assignments
+    @rbac.user_role_assignments=@user_role_assignments
     #assert( rbac.user_role_assignments?(@user_role_assignment))
     #assert(!rbac.user_role_assignments_include?('foo'))
   end
 
   def test_active_role_set_is_subset_of_roles_assigned_to_user
-    rbac = RoleBasedAccessControlSimple.new
     #active_role_set_is_subset_of_roles_assigned_to_user?(@user)
   end
 
   def test_user_owns_session
-    rbac = RoleBasedAccessControlSimple.new
-    rbac.add_user(user)
-    rbac.create_session(user, session)
+    @rbac.add_user(user)
+    @rbac.create_session(user, session)
     assert(user_owns_session?(@user, @session))
   end
 

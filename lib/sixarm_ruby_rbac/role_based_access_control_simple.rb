@@ -16,6 +16,8 @@ class RoleBasedAccessControlSimple < RoleBasedAccessControlAbstract
     @permissions=RBAC::Permissions.new
     @assignments=RBAC::Assignments.new
     @grants=RBAC::Grants.new
+    @operations=RBAC::Operations.new
+    @objects=RBAC::Objects.new
   end
 
   def add_user(user)
@@ -102,7 +104,7 @@ class RoleBasedAccessControlSimple < RoleBasedAccessControlAbstract
     roles = active_roles(session)
     permission = @permissions.find_with_operation_and_object(operation, object).first or raise ArgumentError.new([operation, object, permissions].inspect)
     grants = @grants.find_with_permission(permission).first or raise ArgumentError.new([permission].inspect)
-    return user.permissions.include?(permission)
+    return false  #TODO
   end
 
   def assigned_users(role) #=> users
@@ -144,6 +146,30 @@ class RoleBasedAccessControlSimple < RoleBasedAccessControlAbstract
   def user_operations_on_object(user, object) #=> operations
     super(user, object)
     return user_permissions(user).select{|_operation, _object| _object == object}.map{|_object, _operations| _object}
+  end
+
+  def add_operation(operation)
+    super(operation)
+    @operations.add(operation)
+    return
+  end
+
+  def delete_operation(operation) 
+    super(operation)
+    @operations.delete(operation)
+    return
+  end
+
+  def add_object(object)
+    super(object)
+    @objects.add(object)
+    return
+  end
+
+  def delete_object(object) 
+    super(object)
+    @objects.delete(object)
+    return
   end
 
 
@@ -259,6 +285,38 @@ class RoleBasedAccessControlSimple < RoleBasedAccessControlAbstract
   def user_owns_session?(user, session)
     super(user, session)
     return user == session.user
+  end
+
+  def operations() #=> operations
+    super()
+    return @operations
+  end
+
+  def operations=(operations)
+    super(operations)
+    @operations = operations
+    return
+  end
+  
+  def operations_include?(operation)
+    super(operation)
+    return @operations.include?(operation)
+  end
+
+  def objects() #=> objects
+    super()
+    return @objects
+  end
+
+  def objects=(objects)
+    super(objects)
+    @objects = objects
+    return
+  end
+
+  def objects_include?(object)
+    super(object)
+    return @objects.include?(object)
   end
 
 end

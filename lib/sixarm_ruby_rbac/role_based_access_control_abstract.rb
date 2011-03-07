@@ -319,6 +319,72 @@ class RoleBasedAccessControlAbstract
   end
 
 
+  # This command creates a new RBAC operation. 
+  #
+  # The command is valid only if:
+  # - the new operation is not already a member of the /OPS/ data set.
+  #
+  # The /OPS/ data set is updated. 
+  # 
+  # This method is not in the ANSI spec; it is optional for implemenations.
+
+  def add_operation(operation)
+    !operations_include?(operation) or raise OperationFoundError, [operation, operations].inspect 
+  end
+
+
+  # This command deletes an existing operation from the RBAC database. 
+  # 
+  # The command is valid if and only if:
+  # - the operation to be deleted is a member of the /OPS/ data set.
+  #
+  # The /OPS/ data set is updated.
+  #
+  # It is an implementation decision how to proceed with the permissions
+  # that involve the operation. The RBAC system could wait for these
+  # permissions to be deleted normally, or could force delete them, etc.
+  #
+  # This method is not in the ANSI spec; it is optional for implemenations.
+
+  def delete_operation(operation) 
+    operations_include?(operation) or raise OperationNotFoundError, [operation, operations].inspect
+  end
+
+
+  # This command creates a new RBAC object. 
+  #
+  # The command is valid only if:
+  # - the new object is not already a member of the /OPS/ data set.
+  #
+  # The /OPS/ data set is updated. 
+  # 
+  # This method is not in the ANSI spec and it is optional for implemenations.
+  # It is provided here to follow the design patterns for users and roles.
+
+  def add_object(object)
+    !objects_include?(object) or raise ObjectFoundError, [object, objects].inspect 
+  end
+
+
+  # This command deletes an existing object from the RBAC database. 
+  # 
+  # The command is valid if and only if:
+  # - the object to be deleted is a member of the /OPS/ data set.
+  #
+  # The /OPS/ data set is updated.
+  #
+  # It is an implementation decision how to proceed with the permissions
+  # that involve the object. The RBAC system could wait for these
+  # permissions to be deleted normally, or could force delete them, etc.
+  #
+  # This method is not in the ANSI spec; it is optional for implemenations.
+  # It is provided here to follow the design patterns for users and roles.
+
+  def delete_object(object) 
+    objects_include?(object) or raise ObjectNotFoundError, [object, objects].inspect
+  end
+
+
   ##########################################################################
   #
   #  6.2 Hierarchical RBAC
@@ -557,6 +623,7 @@ class RoleBasedAccessControlAbstract
 
   def objects() #=> objects
   end
+
 
   # Set the OBJECTS data set.
   #
