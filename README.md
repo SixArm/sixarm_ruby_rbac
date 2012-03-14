@@ -1,21 +1,30 @@
-= SixArm.com » Ruby » RBAC (Role Based Access Control)
+# SixArm.com » Ruby » <br> RBAC (Role Based Access Control)
 
-Author:: Joel Parker Henderson, joel@joelparkerhenderson.com
-Copyright:: Copyright the original author; I merely made it into a gem.
-License:: See LICENSE.txt file
+* Docs: <http://sixarm.com/sixarm_ruby_rbac/doc>
+* Repo: <http://github.com/sixarm/sixarm_ruby_rbac>
+* Email: Joel Parker Henderson, <joel@sixarm.com>
+
+
+## Introduction
 
 Ruby interface for the RBAC (Role Based Access Control) specification:
-- ANSI INCITS 359-2004
-- American National Standards Institute, Inc.
-- February 3, 2004
 
-= What is Core RBAC?
+  * ANSI INCITS 359-2004
+  * American National Standards Institute, Inc.
+  * February 3, 2004
+
+For docs go to <http://sixarm.com/sixarm_ruby_rbac/doc>
+
+Want to help? We're happy to get pull requests.
+
+
+## What is Core RBAC?
 
 Core RBAC includes sets of five basic data elements called users (USERS),
 roles (ROLES), objects (OBS), operations (OPS), and permissions (PRMS). 
 
 
-== RBAC model
+## RBAC model
 
 The RBAC model as a whole is fundamentally defined in terms of individual
 users being assigned to roles and permissions being assigned to roles.
@@ -26,7 +35,7 @@ a mapping between a user and an activated subset of roles that are
 assigned to the user.
 
 
-== Users
+## Users
 
 A user is defined as a human being. Although the concept of a user 
 can be extended to include machines, networks, or intelligent autonomous
@@ -34,20 +43,20 @@ agents, the definition is limited to a person in this document for
 simplicity reasons. 
 
 
-== Roles
+## Roles
 
 A role is a job function within the context of an organization 
 with some associated semantics regarding the authority and 
 responsibility conferred on the user assigned to the role.
 
 
-== Permissions
+## Permissions
 
 Permission is an approval to perform an operation on one or more
 RBAC protected objects.
 
 
-== Operations
+## Operations
 
 An operation is an executable image of a program, which upon invocation
 executes some function for the user. The types of operations and objects
@@ -63,7 +72,7 @@ The purpose of any access control mechanism is to protect system resources (i.e.
 protected objects). Consistent with earlier models of access control an object is an entity
 that contains or receives information. 
 
-== System Implementations
+## System Implementations
 
 For a system that implements RBAC, the objects
 can represent information containers (e.g., files, directories, in an operating system,
@@ -75,17 +84,18 @@ The set of objects covered by RBAC includes all of the objects listed in the
 permissions that are assigned to roles.
 
 
-== For More Information
+## For More Information
 
 Please see the complete ANSI 359-2004 pdf document.
 
 http://www.list.gmu.edu/journals/tissec/ANSI+INCITS+359-2004.pdf
 
 
-== Roadmap
+## Roadmap
 
 Possible future upgrades:
-- 6.2 Hierarchical RBAC
-- 6.3 Static Separation of Duty (SSD) Relations.
-- 6.4 Dynamic Separation of Duty (SSD) Relations.
+
+  * 6.2 Hierarchical RBAC
+  * 6.3 Static Separation of Duty (SSD) Relations.
+  * 6.4 Dynamic Separation of Duty (SSD) Relations.
 
