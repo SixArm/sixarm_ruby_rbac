@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> RBAC (Role Based Access Control)
 
-* Docs: <http://sixarm.com/sixarm_ruby_rbac/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_rbac/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_rbac>
 * Repo: <http://github.com/sixarm/sixarm_ruby_rbac>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
