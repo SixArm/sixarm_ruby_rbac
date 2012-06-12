@@ -107,11 +107,12 @@ include read, write, and execute; within a database management system,
 operations might include insert, delete, append and update.
 
 
-= Details
+## Objects
 
 The purpose of any access control mechanism is to protect system resources (i.e.,
 protected objects). Consistent with earlier models of access control an object is an entity
 that contains or receives information. 
+
 
 ## System Implementations
 
