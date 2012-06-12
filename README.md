@@ -49,10 +49,22 @@ To install with high security:
 
 ## What is Core RBAC?
 
-Core RBAC includes sets of five basic data elements called users (USERS),
-roles (ROLES), objects (OBS), operations (OPS), and permissions (PRMS). 
+Core RBAC includes tese basic data elements:
 
+  * user
+  * assignment
+  * role
+  * grant
+  * permission
+  * operation
+  * object
+  
+Association basics:
 
+  * a user has many assignments, and has many roles through assignments
+  * a role has many grants, and has many permissions through grants
+  * a permission has many operations, and has many objects through operations
+  
 ## RBAC model
 
 The RBAC model as a whole is fundamentally defined in terms of individual
