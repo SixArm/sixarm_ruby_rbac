@@ -140,7 +140,3 @@ Possible future upgrades:
   * 6.2 Hierarchical RBAC
   * 6.3 Static Separation of Duty (SSD) Relations.
   * 6.4 Dynamic Separation of Duty (SSD) Relations.
-
-## Changes
-
-* 2012-03-14 1.0.0 Update docs, tests
