@@ -5,7 +5,7 @@ RoleBasedAccessControlSimple is the simple implementation of the RoleBasedAccess
 
 =end
 
-require 'sixarm_ruby_rbac'
+require "sixarm_ruby_rbac"
 
 class RoleBasedAccessControlSimple < RoleBasedAccessControlAbstract
 
