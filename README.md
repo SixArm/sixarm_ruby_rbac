@@ -46,7 +46,7 @@ To require the gem in your code:
 
 ## What is Core RBAC?
 
-Core RBAC includes tese basic data elements:
+Core RBAC includes these basic data elements:
 
   * user
   * assignment
@@ -55,36 +55,39 @@ Core RBAC includes tese basic data elements:
   * permission
   * operation
   * object
-  
+
 Association basics:
 
-  * a user has many assignments, and has many roles through assignments
-  * a role has many grants, and has many permissions through grants
-  * a permission has many operations, and has many objects through operations
-  
+  * a user has many assignments
+  * an assignment connects a user and a role
+  * a role has many grants
+  * a grant connects a role and a permission
+  * a permission has many operations
+  * an operation connections a permission and an object
+
 ## RBAC model
 
 The RBAC model as a whole is fundamentally defined in terms of individual
 users being assigned to roles and permissions being assigned to roles.
-A role is a means for naming many-to-many relationships 
+A role is a means for naming many-to-many relationships
 among individual users and permissions. In addition, the core RBAC
-model includes a set of sessions (SESSIONS) where each session is 
+model includes a set of sessions (SESSIONS) where each session is
 a mapping between a user and an activated subset of roles that are
 assigned to the user.
 
 
 ## Users
 
-A user is defined as a human being. Although the concept of a user 
+A user is defined as a human being. Although the concept of a user
 can be extended to include machines, networks, or intelligent autonomous
 agents, the definition is limited to a person in this document for
-simplicity reasons. 
+simplicity reasons.
 
 
 ## Roles
 
-A role is a job function within the context of an organization 
-with some associated semantics regarding the authority and 
+A role is a job function within the context of an organization
+with some associated semantics regarding the authority and
 responsibility conferred on the user assigned to the role.
 
 
@@ -99,8 +102,8 @@ RBAC protected objects.
 An operation is an executable image of a program, which upon invocation
 executes some function for the user. The types of operations and objects
 that RBAC controls are dependent on the type of system in which it will
-be implemented. For example, within a file system, operations might 
-include read, write, and execute; within a database management system, 
+be implemented. For example, within a file system, operations might
+include read, write, and execute; within a database management system,
 operations might include insert, delete, append and update.
 
 
@@ -108,7 +111,7 @@ operations might include insert, delete, append and update.
 
 The purpose of any access control mechanism is to protect system resources (i.e.,
 protected objects). Consistent with earlier models of access control an object is an entity
-that contains or receives information. 
+that contains or receives information.
 
 
 ## System Implementations
@@ -117,7 +120,7 @@ For a system that implements RBAC, the objects
 can represent information containers (e.g., files, directories, in an operating system,
 and/or columns, rows, tables, and views within a database management system) or
 objects can represent exhaustible system resources, such as printers, disk space, and CPU
-cycles. 
+cycles.
 
 The set of objects covered by RBAC includes all of the objects listed in the
 permissions that are assigned to roles.
