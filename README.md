@@ -1,4 +1,4 @@
-# Ruby » <br> RBAC: Role Based Access Control
+SixArm.com → Ruby → <br> RBAC: Role Based Access Control
 
 * Doc: <http://sixarm.com/sixarm_ruby_rbac/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_rbac>
