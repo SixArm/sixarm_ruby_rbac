@@ -3,7 +3,7 @@
 * Doc: <http://sixarm.com/sixarm_ruby_rbac/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_rbac>
 * Repo: <http://github.com/sixarm/sixarm_ruby_rbac>
-<!--HEADER-SHUT-->
+<!--header-shut-->
 
 
 ## Introduction
@@ -19,7 +19,7 @@ For docs go to <http://sixarm.com/sixarm_ruby_rbac/doc>
 Want to help? We're happy to get pull requests.
 
 
-<!--INSTALL-OPEN-->
+<!--install-opent-->
 
 ## Install
 
@@ -41,7 +41,7 @@ To require the gem in your code:
 
     require "sixarm_ruby_rbac"
 
-<!--INSTALL-SHUT-->
+<!--install-shut-->
 
 
 ## What is Core RBAC?
