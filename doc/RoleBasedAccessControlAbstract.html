@@ -1,58 +1,74 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta name="Content-Type" content="text/html; charset=utf-8" />
-<title>Class: RoleBasedAccessControlAbstract</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: RoleBasedAccessControlAbstract
+  
+    &mdash; Documentation by YARD 0.9.19
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
+  pathId = "RoleBasedAccessControlAbstract";
   relpath = '';
-  if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
 
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
-    
-    <div id="header">
-      <div id="menu">
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
   
-    <a href="_index.html">Index (R)</a> &raquo; 
+    <a href="_index.html">Index (R)</a> &raquo;
     
     
     <span class="title">RoleBasedAccessControlAbstract</span>
   
+</div>
+
+        <div id="search">
   
-  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
-</div>
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
 
-      <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
 </div>
+        <div class="clear"></div>
+      </div>
 
-      <div class="clear"></div>
-    </div>
-    
-    <iframe id="search_frame"></iframe>
-    
-    <div id="content"><h1>Class: RoleBasedAccessControlAbstract
+      <div id="content"><h1>Class: RoleBasedAccessControlAbstract
   
   
   
 </h1>
-
-<dl class="box">
+<div class="box_info">
   
-    <dt class="r1">Inherits:</dt>
-    <dd class="r1">
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
       <span class="inheritName">Object</span>
       
         <ul class="fullTree">
@@ -63,21 +79,25 @@
         </ul>
         <a href="#" class="inheritanceTree">show all</a>
       
-      </dd>
-    
+    </dd>
+  </dl>
   
-  
-    
-  
-    
+
   
   
   
-    <dt class="r2 last">Defined in:</dt>
-    <dd class="r2 last">lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb</dd>
   
-</dl>
-<div class="clear"></div>
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb</dd>
+  </dl>
+  
+</div>
 
 <div id="subclasses">
   <h2>Direct Known Subclasses</h2>
@@ -86,10 +106,14 @@
 
 
 
+
+
+
+
   
     <h2>
       Instance Method Summary
-      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+      <small><a href="#" class="summary_toggle">collapse</a></small>
     </h2>
 
     <ul class="summary">
@@ -97,7 +121,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#active_roles-instance_method" title="#active_roles (instance method)">- (Object) <strong>active_roles</strong>(session) </a>
+      <a href="#active_roles-instance_method" title="#active_roles (instance method)">#<strong>active_roles</strong>(session)  &#x21d2; Object </a>
     
 
     
@@ -108,11 +132,11 @@
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the ACTIVE_ROLES data set for the session.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the ACTIVE_ROLES data set for the session.</p>
 </div></span>
   
 </li>
@@ -121,7 +145,7 @@ Return the ACTIVE_ROLES data set for the session.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#active_roles_include%3F-instance_method" title="#active_roles_include? (instance method)">- (Boolean) <strong>active_roles_include?</strong>(role, session) </a>
+      <a href="#active_roles_include%3F-instance_method" title="#active_roles_include? (instance method)">#<strong>active_roles_include?</strong>(role, session)  &#x21d2; Boolean </a>
     
 
     
@@ -132,11 +156,11 @@ Return the ACTIVE_ROLES data set for the session.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the role is an active role of the session.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the role is an active role of the session.</p>
 </div></span>
   
 </li>
@@ -145,7 +169,7 @@ Return true iff the role is an active role of the session.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#add_active_role-instance_method" title="#add_active_role (instance method)">- (Object) <strong>add_active_role</strong>(user, session, role) </a>
+      <a href="#add_active_role-instance_method" title="#add_active_role (instance method)">#<strong>add_active_role</strong>(user, session, role)  &#x21d2; Object </a>
     
 
     
@@ -156,12 +180,11 @@ Return true iff the role is an active role of the session.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function adds a role as an active role of a session whose owner is a
-given user.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function adds a role as an active role of a session whose owner is a given user.</p>
 </div></span>
   
 </li>
@@ -170,7 +193,7 @@ given user.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#add_role-instance_method" title="#add_role (instance method)">- (Object) <strong>add_role</strong>(role) </a>
+      <a href="#add_object-instance_method" title="#add_object (instance method)">#<strong>add_object</strong>(object)  &#x21d2; Object </a>
     
 
     
@@ -181,11 +204,11 @@ given user.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command creates a new role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command creates a new RBAC object.</p>
 </div></span>
   
 </li>
@@ -194,7 +217,7 @@ This command creates a new role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#add_user-instance_method" title="#add_user (instance method)">- (Object) <strong>add_user</strong>(user) </a>
+      <a href="#add_operation-instance_method" title="#add_operation (instance method)">#<strong>add_operation</strong>(operation)  &#x21d2; Object </a>
     
 
     
@@ -205,11 +228,11 @@ This command creates a new role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command creates a new RBAC user.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command creates a new RBAC operation.</p>
 </div></span>
   
 </li>
@@ -218,7 +241,7 @@ This command creates a new RBAC user.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assign_user-instance_method" title="#assign_user (instance method)">- (Object) <strong>assign_user</strong>(user, role) </a>
+      <a href="#add_role-instance_method" title="#add_role (instance method)">#<strong>add_role</strong>(role)  &#x21d2; Object </a>
     
 
     
@@ -229,11 +252,11 @@ This command creates a new RBAC user.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command assigns a user to a role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command creates a new role.</p>
 </div></span>
   
 </li>
@@ -242,7 +265,7 @@ This command assigns a user to a role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assigned_roles-instance_method" title="#assigned_roles (instance method)">- (Object) <strong>assigned_roles</strong>(user) </a>
+      <a href="#add_user-instance_method" title="#add_user (instance method)">#<strong>add_user</strong>(user)  &#x21d2; Object </a>
     
 
     
@@ -253,11 +276,11 @@ This command assigns a user to a role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the set of roles assigned to a given user.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command creates a new RBAC user.</p>
 </div></span>
   
 </li>
@@ -266,7 +289,7 @@ This function returns the set of roles assigned to a given user.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assigned_users-instance_method" title="#assigned_users (instance method)">- (Object) <strong>assigned_users</strong>(role) </a>
+      <a href="#assign_user-instance_method" title="#assign_user (instance method)">#<strong>assign_user</strong>(user, role)  &#x21d2; Object </a>
     
 
     
@@ -277,11 +300,11 @@ This function returns the set of roles assigned to a given user.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the set of users assigned to a given role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command assigns a user to a role.</p>
 </div></span>
   
 </li>
@@ -290,7 +313,7 @@ This function returns the set of users assigned to a given role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assignments-instance_method" title="#assignments (instance method)">- (Object) <strong>assignments</strong> </a>
+      <a href="#assigned_roles-instance_method" title="#assigned_roles (instance method)">#<strong>assigned_roles</strong>(user)  &#x21d2; Object </a>
     
 
     
@@ -301,11 +324,11 @@ This function returns the set of users assigned to a given role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the set of user role assignments.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the set of roles assigned to a given user.</p>
 </div></span>
   
 </li>
@@ -314,7 +337,7 @@ Return the set of user role assignments.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assignments%3D-instance_method" title="#assignments= (instance method)">- (Object) <strong>assignments=</strong>(assignments) </a>
+      <a href="#assigned_users-instance_method" title="#assigned_users (instance method)">#<strong>assigned_users</strong>(role)  &#x21d2; Object </a>
     
 
     
@@ -325,11 +348,11 @@ Return the set of user role assignments.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the user role assignments data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the set of users assigned to a given role.</p>
 </div></span>
   
 </li>
@@ -338,7 +361,7 @@ Set the user role assignments data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#assignments_include%3F-instance_method" title="#assignments_include? (instance method)">- (Boolean) <strong>assignments_include?</strong>(user, role) </a>
+      <a href="#assignments-instance_method" title="#assignments (instance method)">#<strong>assignments</strong>  &#x21d2; Object </a>
     
 
     
@@ -349,11 +372,11 @@ Set the user role assignments data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the user is assigned to the role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the set of user role assignments.</p>
 </div></span>
   
 </li>
@@ -362,7 +385,7 @@ Return true iff the user is assigned to the role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#check_access-instance_method" title="#check_access (instance method)">- (Object) <strong>check_access</strong>(session, operation, object) </a>
+      <a href="#assignments=-instance_method" title="#assignments= (instance method)">#<strong>assignments=</strong>(assignments)  &#x21d2; Object </a>
     
 
     
@@ -373,13 +396,11 @@ Return true iff the user is assigned to the role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns a Boolean value meaning whether the subject of a
-given session is allowed or not to perform a given operation on a given
-object.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the user role assignments data set.</p>
 </div></span>
   
 </li>
@@ -388,7 +409,7 @@ object.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#create_session-instance_method" title="#create_session (instance method)">- (Object) <strong>create_session</strong>(user, session) </a>
+      <a href="#assignments_include%3F-instance_method" title="#assignments_include? (instance method)">#<strong>assignments_include?</strong>(user, role)  &#x21d2; Boolean </a>
     
 
     
@@ -399,12 +420,11 @@ object.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function creates a new session with a given user as owner and an
-active role set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the user is assigned to the role.</p>
 </div></span>
   
 </li>
@@ -413,7 +433,7 @@ active role set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#deassign_user-instance_method" title="#deassign_user (instance method)">- (Object) <strong>deassign_user</strong>(user, role) </a>
+      <a href="#check_access-instance_method" title="#check_access (instance method)">#<strong>check_access</strong>(session, operation, object)  &#x21d2; Object </a>
     
 
     
@@ -424,11 +444,11 @@ active role set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command deletes the assignment of the user user to the role role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns a Boolean value meaning whether the subject of a given session is allowed or not to perform a given operation on a given object.</p>
 </div></span>
   
 </li>
@@ -437,7 +457,7 @@ This command deletes the assignment of the user user to the role role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#delete_role-instance_method" title="#delete_role (instance method)">- (Object) <strong>delete_role</strong>(role) </a>
+      <a href="#create_session-instance_method" title="#create_session (instance method)">#<strong>create_session</strong>(user, session)  &#x21d2; Object </a>
     
 
     
@@ -448,11 +468,11 @@ This command deletes the assignment of the user user to the role role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command deletes an existing role from the RBAC database.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function creates a new session with a given user as owner and an active role set.</p>
 </div></span>
   
 </li>
@@ -461,7 +481,7 @@ This command deletes an existing role from the RBAC database.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#delete_session-instance_method" title="#delete_session (instance method)">- (Object) <strong>delete_session</strong>(user, session) </a>
+      <a href="#deassign_user-instance_method" title="#deassign_user (instance method)">#<strong>deassign_user</strong>(user, role)  &#x21d2; Object </a>
     
 
     
@@ -472,11 +492,11 @@ This command deletes an existing role from the RBAC database.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function deletes a given session with a given owner user.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command deletes the assignment of the user user to the role role.</p>
 </div></span>
   
 </li>
@@ -485,7 +505,7 @@ This function deletes a given session with a given owner user.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#delete_user-instance_method" title="#delete_user (instance method)">- (Object) <strong>delete_user</strong>(user) </a>
+      <a href="#delete_object-instance_method" title="#delete_object (instance method)">#<strong>delete_object</strong>(object)  &#x21d2; Object </a>
     
 
     
@@ -496,11 +516,11 @@ This function deletes a given session with a given owner user.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command deletes an existing user from the RBAC database.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command deletes an existing object from the RBAC database.</p>
 </div></span>
   
 </li>
@@ -509,7 +529,7 @@ This command deletes an existing user from the RBAC database.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#drop_active_role-instance_method" title="#drop_active_role (instance method)">- (Object) <strong>drop_active_role</strong>(user, session, role) </a>
+      <a href="#delete_operation-instance_method" title="#delete_operation (instance method)">#<strong>delete_operation</strong>(operation)  &#x21d2; Object </a>
     
 
     
@@ -520,12 +540,11 @@ This command deletes an existing user from the RBAC database.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function deletes a role from the active role set of a session owned by
-a given user.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command deletes an existing operation from the RBAC database.</p>
 </div></span>
   
 </li>
@@ -534,7 +553,7 @@ a given user.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#grant_permission-instance_method" title="#grant_permission (instance method)">- (Object) <strong>grant_permission</strong>(operation, object, role) </a>
+      <a href="#delete_role-instance_method" title="#delete_role (instance method)">#<strong>delete_role</strong>(role)  &#x21d2; Object </a>
     
 
     
@@ -545,12 +564,11 @@ a given user.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command grants a role the permission to perform an operation on an
-object to a role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command deletes an existing role from the RBAC database.</p>
 </div></span>
   
 </li>
@@ -559,7 +577,7 @@ object to a role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#objects-instance_method" title="#objects (instance method)">- (Object) <strong>objects</strong> </a>
+      <a href="#delete_session-instance_method" title="#delete_session (instance method)">#<strong>delete_session</strong>(user, session)  &#x21d2; Object </a>
     
 
     
@@ -570,11 +588,11 @@ object to a role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the OBJECTS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function deletes a given session with a given owner user.</p>
 </div></span>
   
 </li>
@@ -583,7 +601,7 @@ Return the OBJECTS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#objects%3D-instance_method" title="#objects= (instance method)">- (Object) <strong>objects=</strong>(objects) </a>
+      <a href="#delete_user-instance_method" title="#delete_user (instance method)">#<strong>delete_user</strong>(user)  &#x21d2; Object </a>
     
 
     
@@ -594,11 +612,11 @@ Return the OBJECTS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the OBJECTS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command deletes an existing user from the RBAC database.</p>
 </div></span>
   
 </li>
@@ -607,7 +625,7 @@ Set the OBJECTS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#objects_include%3F-instance_method" title="#objects_include? (instance method)">- (Boolean) <strong>objects_include?</strong>(object) </a>
+      <a href="#drop_active_role-instance_method" title="#drop_active_role (instance method)">#<strong>drop_active_role</strong>(user, session, role)  &#x21d2; Object </a>
     
 
     
@@ -618,11 +636,11 @@ Set the OBJECTS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the session is a member of the OBJECTS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function deletes a role from the active role set of a session owned by a given user.</p>
 </div></span>
   
 </li>
@@ -631,7 +649,7 @@ Return true iff the session is a member of the OBJECTS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#operation_object_pair_represents_permission%3F-instance_method" title="#operation_object_pair_represents_permission? (instance method)">- (Boolean) <strong>operation_object_pair_represents_permission?</strong>(operation, object) </a>
+      <a href="#grant_permission-instance_method" title="#grant_permission (instance method)">#<strong>grant_permission</strong>(operation, object, role)  &#x21d2; Object </a>
     
 
     
@@ -642,11 +660,11 @@ Return true iff the session is a member of the OBJECTS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the operation object pair represents a permission.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command grants a role the permission to perform an operation on an object to a role.</p>
 </div></span>
   
 </li>
@@ -655,7 +673,7 @@ Return true iff the operation object pair represents a permission.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#operations-instance_method" title="#operations (instance method)">- (Object) <strong>operations</strong> </a>
+      <a href="#objects-instance_method" title="#objects (instance method)">#<strong>objects</strong>  &#x21d2; Object </a>
     
 
     
@@ -666,11 +684,11 @@ Return true iff the operation object pair represents a permission.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the OPERATIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the OBJECTS data set.</p>
 </div></span>
   
 </li>
@@ -679,7 +697,7 @@ Return the OPERATIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#operations%3D-instance_method" title="#operations= (instance method)">- (Object) <strong>operations=</strong>(operations) </a>
+      <a href="#objects=-instance_method" title="#objects= (instance method)">#<strong>objects=</strong>(objects)  &#x21d2; Object </a>
     
 
     
@@ -690,11 +708,11 @@ Return the OPERATIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the OPERATIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the OBJECTS data set.</p>
 </div></span>
   
 </li>
@@ -703,7 +721,7 @@ Set the OPERATIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#operations_include%3F-instance_method" title="#operations_include? (instance method)">- (Boolean) <strong>operations_include?</strong>(operation) </a>
+      <a href="#objects_include%3F-instance_method" title="#objects_include? (instance method)">#<strong>objects_include?</strong>(object)  &#x21d2; Boolean </a>
     
 
     
@@ -714,11 +732,11 @@ Set the OPERATIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the session is a member of the OPERATIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the session is a member of the OBJECTS data set.</p>
 </div></span>
   
 </li>
@@ -727,7 +745,7 @@ Return true iff the session is a member of the OPERATIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#permissions-instance_method" title="#permissions (instance method)">- (Object) <strong>permissions</strong> </a>
+      <a href="#operation_object_pair_represents_permission%3F-instance_method" title="#operation_object_pair_represents_permission? (instance method)">#<strong>operation_object_pair_represents_permission?</strong>(operation, object)  &#x21d2; Boolean </a>
     
 
     
@@ -738,11 +756,11 @@ Return true iff the session is a member of the OPERATIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the PERMISSIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the operation object pair represents a permission.</p>
 </div></span>
   
 </li>
@@ -751,7 +769,7 @@ Return the PERMISSIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#permissions%3D-instance_method" title="#permissions= (instance method)">- (Object) <strong>permissions=</strong>(permissions) </a>
+      <a href="#operations-instance_method" title="#operations (instance method)">#<strong>operations</strong>  &#x21d2; Object </a>
     
 
     
@@ -762,11 +780,11 @@ Return the PERMISSIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the PERMISSIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the OPERATIONS data set.</p>
 </div></span>
   
 </li>
@@ -775,7 +793,7 @@ Set the PERMISSIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#permissions_include%3F-instance_method" title="#permissions_include? (instance method)">- (Boolean) <strong>permissions_include?</strong>(operation, object) </a>
+      <a href="#operations=-instance_method" title="#operations= (instance method)">#<strong>operations=</strong>(operations)  &#x21d2; Object </a>
     
 
     
@@ -786,11 +804,11 @@ Set the PERMISSIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the permission is a member of the PERMISSIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the OPERATIONS data set.</p>
 </div></span>
   
 </li>
@@ -799,7 +817,7 @@ Return true iff the permission is a member of the PERMISSIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#revoke_permission-instance_method" title="#revoke_permission (instance method)">- (Object) <strong>revoke_permission</strong>(operation, object, role) </a>
+      <a href="#operations_include%3F-instance_method" title="#operations_include? (instance method)">#<strong>operations_include?</strong>(operation)  &#x21d2; Boolean </a>
     
 
     
@@ -810,12 +828,11 @@ Return true iff the permission is a member of the PERMISSIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This command revokes the permission to perform an operation on an object
-from the set of permissions assigned to a role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the session is a member of the OPERATIONS data set.</p>
 </div></span>
   
 </li>
@@ -824,7 +841,7 @@ from the set of permissions assigned to a role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#role_operations_on_object-instance_method" title="#role_operations_on_object (instance method)">- (Object) <strong>role_operations_on_object</strong>(role, object) </a>
+      <a href="#permissions-instance_method" title="#permissions (instance method)">#<strong>permissions</strong>  &#x21d2; Object </a>
     
 
     
@@ -835,12 +852,11 @@ from the set of permissions assigned to a role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the set of operations a given role is permitted to
-perform on a given object.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the PERMISSIONS data set.</p>
 </div></span>
   
 </li>
@@ -849,7 +865,7 @@ perform on a given object.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#role_permissions-instance_method" title="#role_permissions (instance method)">- (Object) <strong>role_permissions</strong>(role) </a>
+      <a href="#permissions=-instance_method" title="#permissions= (instance method)">#<strong>permissions=</strong>(permissions)  &#x21d2; Object </a>
     
 
     
@@ -860,12 +876,11 @@ perform on a given object.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the set of all permissions (op, obj),  granted to or
-inherited by a given role.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the PERMISSIONS data set.</p>
 </div></span>
   
 </li>
@@ -874,7 +889,7 @@ inherited by a given role.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#roles-instance_method" title="#roles (instance method)">- (Object) <strong>roles</strong> </a>
+      <a href="#permissions_include%3F-instance_method" title="#permissions_include? (instance method)">#<strong>permissions_include?</strong>(operation, object)  &#x21d2; Boolean </a>
     
 
     
@@ -885,11 +900,11 @@ inherited by a given role.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the ROLES data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the permission is a member of the PERMISSIONS data set.</p>
 </div></span>
   
 </li>
@@ -898,7 +913,7 @@ Return the ROLES data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#roles%3D-instance_method" title="#roles= (instance method)">- (Object) <strong>roles=</strong>(roles) </a>
+      <a href="#revoke_permission-instance_method" title="#revoke_permission (instance method)">#<strong>revoke_permission</strong>(operation, object, role)  &#x21d2; Object </a>
     
 
     
@@ -909,11 +924,11 @@ Return the ROLES data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the ROLES data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This command revokes the permission to perform an operation on an object from the set of permissions assigned to a role.</p>
 </div></span>
   
 </li>
@@ -922,7 +937,7 @@ Set the ROLES data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#roles_include%3F-instance_method" title="#roles_include? (instance method)">- (Boolean) <strong>roles_include?</strong>(role) </a>
+      <a href="#role_operations_on_object-instance_method" title="#role_operations_on_object (instance method)">#<strong>role_operations_on_object</strong>(role, object)  &#x21d2; Object </a>
     
 
     
@@ -933,11 +948,11 @@ Set the ROLES data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the role is a member of the ROLES data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the set of operations a given role is permitted to perform on a given object.</p>
 </div></span>
   
 </li>
@@ -946,7 +961,7 @@ Return true iff the role is a member of the ROLES data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#session_active_role_set_is_subset_of_user_role_set%3F-instance_method" title="#session_active_role_set_is_subset_of_user_role_set? (instance method)">- (Boolean) <strong>session_active_role_set_is_subset_of_user_role_set?</strong>(session, user) </a>
+      <a href="#role_permissions-instance_method" title="#role_permissions (instance method)">#<strong>role_permissions</strong>(role)  &#x21d2; Object </a>
     
 
     
@@ -957,12 +972,11 @@ Return true iff the role is a member of the ROLES data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the session active role set is a subset of the roles
-assigned to that user.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the set of all permissions (op, obj),  granted to or inherited by a given role.</p>
 </div></span>
   
 </li>
@@ -971,7 +985,7 @@ assigned to that user.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#session_permissions-instance_method" title="#session_permissions (instance method)">- (Object) <strong>session_permissions</strong>(session) </a>
+      <a href="#roles-instance_method" title="#roles (instance method)">#<strong>roles</strong>  &#x21d2; Object </a>
     
 
     
@@ -982,12 +996,11 @@ assigned to that user.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the permissions of the session session,  i.e., the
-permissions assigned to its active roles.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the ROLES data set.</p>
 </div></span>
   
 </li>
@@ -996,7 +1009,7 @@ permissions assigned to its active roles.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#session_roles-instance_method" title="#session_roles (instance method)">- (Object) <strong>session_roles</strong>(session) </a>
+      <a href="#roles=-instance_method" title="#roles= (instance method)">#<strong>roles=</strong>(roles)  &#x21d2; Object </a>
     
 
     
@@ -1007,11 +1020,11 @@ permissions assigned to its active roles.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the active roles associated with a session.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the ROLES data set.</p>
 </div></span>
   
 </li>
@@ -1020,7 +1033,7 @@ This function returns the active roles associated with a session.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#sessions-instance_method" title="#sessions (instance method)">- (Object) <strong>sessions</strong> </a>
+      <a href="#roles_include%3F-instance_method" title="#roles_include? (instance method)">#<strong>roles_include?</strong>(role)  &#x21d2; Boolean </a>
     
 
     
@@ -1031,11 +1044,11 @@ This function returns the active roles associated with a session.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the SESSIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the role is a member of the ROLES data set.</p>
 </div></span>
   
 </li>
@@ -1044,7 +1057,7 @@ Return the SESSIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#sessions%3D-instance_method" title="#sessions= (instance method)">- (Object) <strong>sessions=</strong>(sessions) </a>
+      <a href="#session_active_role_set_is_subset_of_user_role_set%3F-instance_method" title="#session_active_role_set_is_subset_of_user_role_set? (instance method)">#<strong>session_active_role_set_is_subset_of_user_role_set?</strong>(session, user)  &#x21d2; Boolean </a>
     
 
     
@@ -1055,11 +1068,11 @@ Return the SESSIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the SESSIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the session active role set is a subset of the roles assigned to that user.</p>
 </div></span>
   
 </li>
@@ -1068,7 +1081,7 @@ Set the SESSIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#sessions_include%3F-instance_method" title="#sessions_include? (instance method)">- (Boolean) <strong>sessions_include?</strong>(session) </a>
+      <a href="#session_permissions-instance_method" title="#session_permissions (instance method)">#<strong>session_permissions</strong>(session)  &#x21d2; Object </a>
     
 
     
@@ -1079,11 +1092,11 @@ Set the SESSIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the session is a member of the SESSIONS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the permissions of the session session,  i.e., the permissions assigned to its active roles.</p>
 </div></span>
   
 </li>
@@ -1092,7 +1105,7 @@ Return true iff the session is a member of the SESSIONS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#user_operations_on_object-instance_method" title="#user_operations_on_object (instance method)">- (Object) <strong>user_operations_on_object</strong>(user, object) </a>
+      <a href="#session_roles-instance_method" title="#session_roles (instance method)">#<strong>session_roles</strong>(session)  &#x21d2; Object </a>
     
 
     
@@ -1103,12 +1116,11 @@ Return true iff the session is a member of the SESSIONS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the set of operations a given user is permitted to
-perform on a given object.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the active roles associated with a session.</p>
 </div></span>
   
 </li>
@@ -1117,7 +1129,7 @@ perform on a given object.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#user_owns_session%3F-instance_method" title="#user_owns_session? (instance method)">- (Boolean) <strong>user_owns_session?</strong>(user, session) </a>
+      <a href="#sessions-instance_method" title="#sessions (instance method)">#<strong>sessions</strong>  &#x21d2; Object </a>
     
 
     
@@ -1128,11 +1140,11 @@ perform on a given object.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the user owns the session.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return the SESSIONS data set.</p>
 </div></span>
   
 </li>
@@ -1141,7 +1153,7 @@ Return true iff the user owns the session.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#user_permissions-instance_method" title="#user_permissions (instance method)">- (Object) <strong>user_permissions</strong>(user) </a>
+      <a href="#sessions=-instance_method" title="#sessions= (instance method)">#<strong>sessions=</strong>(sessions)  &#x21d2; Object </a>
     
 
     
@@ -1152,12 +1164,11 @@ Return true iff the user owns the session.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-This function returns the permissions a given user gets through his/her
-authorized roles.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Set the SESSIONS data set.</p>
 </div></span>
   
 </li>
@@ -1166,7 +1177,7 @@ authorized roles.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#users-instance_method" title="#users (instance method)">- (Object) <strong>users</strong> </a>
+      <a href="#sessions_include%3F-instance_method" title="#sessions_include? (instance method)">#<strong>sessions_include?</strong>(session)  &#x21d2; Boolean </a>
     
 
     
@@ -1177,11 +1188,11 @@ authorized roles.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return the USERS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the session is a member of the SESSIONS data set.</p>
 </div></span>
   
 </li>
@@ -1190,7 +1201,7 @@ Return the USERS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#users%3D-instance_method" title="#users= (instance method)">- (Object) <strong>users=</strong>(users) </a>
+      <a href="#user_operations_on_object-instance_method" title="#user_operations_on_object (instance method)">#<strong>user_operations_on_object</strong>(user, object)  &#x21d2; Object </a>
     
 
     
@@ -1201,11 +1212,11 @@ Return the USERS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Set the USERS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the set of operations a given user is permitted to perform on a given object.</p>
 </div></span>
   
 </li>
@@ -1214,7 +1225,7 @@ Set the USERS data set.
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#users_include%3F-instance_method" title="#users_include? (instance method)">- (Boolean) <strong>users_include?</strong>(user) </a>
+      <a href="#user_owns_session%3F-instance_method" title="#user_owns_session? (instance method)">#<strong>user_owns_session?</strong>(user, session)  &#x21d2; Boolean </a>
     
 
     
@@ -1225,11 +1236,107 @@ Set the USERS data set.
   
   
   
+  
 
   
-    <span class="summary_desc"><div class='inline'><p>
-Return true iff the user is a member of the USERS data set.
-</p>
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the user owns the session.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_permissions-instance_method" title="#user_permissions (instance method)">#<strong>user_permissions</strong>(user)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>This function returns the permissions a given user gets through his/her authorized roles.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users-instance_method" title="#users (instance method)">#<strong>users</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return the USERS data set.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users=-instance_method" title="#users= (instance method)">#<strong>users=</strong>(users)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Set the USERS data set.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#users_include%3F-instance_method" title="#users_include? (instance method)">#<strong>users_include?</strong>(user)  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Return true iff the user is a member of the USERS data set.</p>
 </div></span>
   
 </li>
@@ -1242,42 +1349,43 @@ Return true iff the user is a member of the USERS data set.
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
-    
+
     
       <div class="method_details first">
-  <p class="signature first" id="active_roles-instance_method">
+  <h3 class="signature first" id="active_roles-instance_method">
   
-    - (<tt>Object</tt>) <strong>active_roles</strong>(session) 
+    #<strong>active_roles</strong>(session)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the ACTIVE_ROLES data set for the session.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the ACTIVE_ROLES data set for the session.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-478
-479</pre>
+544
+545</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 478</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 544</span>
 
-<span class='kw'>def</span> <span class='id active_roles'>active_roles</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+<span class='kw'>def</span> <span class='id identifier rubyid_active_roles'>active_roles</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1285,32 +1393,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="active_roles_include?-instance_method">
+  <h3 class="signature " id="active_roles_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>active_roles_include?</strong>(role, session) 
+    #<strong>active_roles_include?</strong>(role, session)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the role is an active role of the session. 
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the role is an active role of the session. </p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -1324,13 +1433,13 @@ Required for implementations.
       <pre class="lines">
 
 
-486
-487</pre>
+552
+553</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 486</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 552</span>
 
-<span class='kw'>def</span> <span class='id active_roles_include?'>active_roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_active_roles_include?'>active_roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1338,53 +1447,40 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="add_active_role-instance_method">
+  <h3 class="signature " id="add_active_role-instance_method">
   
-    - (<tt>Object</tt>) <strong>add_active_role</strong>(user, session, role) 
+    #<strong>add_active_role</strong>(user, session, role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function adds a role as an active role of a session whose owner is a
-given user. 
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set
-</p>
-</li>
-<li><p>
-the session identifier is a member of the SESSIONS data set
-</p>
-</li>
-<li><p>
-the role is a member of the ROLES data set
-</p>
-</li>
-<li><p>
-the role is assigned to the user
-</p>
-</li>
-<li><p>
-the session is owned by that user
-</p>
-</li>
-</ul>
-<p>
-In an implementation, the new active role might be a group that corresponds
-to that role.
-</p>
+    
+<p>This function adds a role as an active role of a session whose owner is a given user. </p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set</p>
+</li><li>
+<p>the session identifier is a member of the SESSIONS data set</p>
+</li><li>
+<p>the role is a member of the ROLES data set</p>
+</li><li>
+<p>the role is assigned to the user</p>
+</li><li>
+<p>the session is owned by that user</p>
+</li></ul>
+
+<p>In an implementation, the new active role might be a group that corresponds to that role.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1402,12 +1498,12 @@ to that role.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 186</span>
 
-<span class='kw'>def</span> <span class='id add_active_role'>add_active_role</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>AssignmentNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='comma'>,</span> <span class='id assignments'>assignments</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotOwnedByUserError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_add_active_role'>add_active_role</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>AssignmentNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_assignments'>assignments</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotOwnedByUserError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1415,39 +1511,134 @@ to that role.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="add_role-instance_method">
+  <h3 class="signature " id="add_object-instance_method">
   
-    - (<tt>Object</tt>) <strong>add_role</strong>(role) 
+    #<strong>add_object</strong>(object)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command creates a new role.
-</p>
-<p>
-The command is valid if and only if:
-</p>
-<ul>
-<li><p>
-the new role is not already a member of the /ROLES/ data set.
-</p>
-</li>
-</ul>
-<p>
-The /ROLES/ data set and the functions /assigned_users/ and
-/assigned_permissions/ are updated. 
-</p>
-<p>
-Initially, no user or permission is assigned to the new role.
-</p>
+    
+<p>This command creates a new RBAC object. </p>
+
+<p>The command is valid only if:</p>
+<ul><li>
+<p>the new object is not already a member of the /OPS/ data set.</p>
+</li></ul>
+
+<p>The /OPS/ data set is updated. </p>
+
+<p>This method is not in the ANSI spec and it is optional for implemenations. It is provided here to follow the design patterns for users and roles.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+364
+365
+366</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 364</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_object'>add_object</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+  <span class='op'>!</span><span class='id identifier rubyid_objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ObjectFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span> 
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_operation-instance_method">
+  
+    #<strong>add_operation</strong>(operation)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This command creates a new RBAC operation. </p>
+
+<p>The command is valid only if:</p>
+<ul><li>
+<p>the new operation is not already a member of the /OPS/ data set.</p>
+</li></ul>
+
+<p>The /OPS/ data set is updated. </p>
+
+<p>This method is not in the ANSI spec; it is optional for implemenations.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+331
+332
+333</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 331</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_operation'>add_operation</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='rparen'>)</span>
+  <span class='op'>!</span><span class='id identifier rubyid_operations_include?'>operations_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>OperationFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_operations'>operations</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span> 
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="add_role-instance_method">
+  
+    #<strong>add_role</strong>(role)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This command creates a new role.</p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the new role is not already a member of the /ROLES/ data set.</p>
+</li></ul>
+
+<p>The /ROLES/ data set and the functions /assigned_users/ and /assigned_permissions/ are updated. </p>
+
+<p>Initially, no user or permission is assigned to the new role.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1461,8 +1652,8 @@ Initially, no user or permission is assigned to the new role.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 62</span>
 
-<span class='kw'>def</span> <span class='id add_role'>add_role</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='op'>!</span><span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_add_role'>add_role</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='op'>!</span><span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1470,38 +1661,34 @@ Initially, no user or permission is assigned to the new role.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="add_user-instance_method">
+  <h3 class="signature " id="add_user-instance_method">
   
-    - (<tt>Object</tt>) <strong>add_user</strong>(user) 
+    #<strong>add_user</strong>(user)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command creates a new RBAC user. 
-</p>
-<p>
-The command is valid only if:
-</p>
-<ul>
-<li><p>
-the new user is not already a member of the /USERS/ data set.
-</p>
-</li>
-</ul>
-<p>
-The /USER/ data set is updated. 
-</p>
-<p>
-The new user does not own any session at the time of its creation.
-</p>
+    
+<p>This command creates a new RBAC user. </p>
+
+<p>The command is valid only if:</p>
+<ul><li>
+<p>the new user is not already a member of the /USERS/ data set.</p>
+</li></ul>
+
+<p>The /USER/ data set is updated. </p>
+
+<p>The new user does not own any session at the time of its creation.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1515,8 +1702,8 @@ The new user does not own any session at the time of its creation.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 32</span>
 
-<span class='kw'>def</span> <span class='id add_user'>add_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span>
-  <span class='op'>!</span><span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span> 
+<span class='kw'>def</span> <span class='id identifier rubyid_add_user'>add_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='op'>!</span><span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span> 
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1524,44 +1711,36 @@ The new user does not own any session at the time of its creation.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="assign_user-instance_method">
+  <h3 class="signature " id="assign_user-instance_method">
   
-    - (<tt>Object</tt>) <strong>assign_user</strong>(user, role) 
+    #<strong>assign_user</strong>(user, role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command assigns a user to a role.
-</p>
-<p>
-The command is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the /USERS/ data set
-</p>
-</li>
-<li><p>
-the role is a member of the /ROLES/ data set
-</p>
-</li>
-<li><p>
-the user is not already assigned to the role
-</p>
-</li>
-</ul>
-<p>
-The data set UA and the function assigned_users are updated to reflect the
-assignment.
-</p>
+    
+<p>This command assigns a user to a role.</p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the /USERS/ data set</p>
+</li><li>
+<p>the role is a member of the /ROLES/ data set</p>
+</li><li>
+<p>the user is not already assigned to the role</p>
+</li></ul>
+
+<p>The data set UA and the function assigned_users are updated to reflect the assignment.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1577,10 +1756,10 @@ assignment.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 91</span>
 
-<span class='kw'>def</span> <span class='id assign_user'>assign_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='op'>!</span><span class='id assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>AssginmentNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='comma'>,</span> <span class='id assignments'>assignments</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_assign_user'>assign_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='op'>!</span><span class='id identifier rubyid_assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>AssginmentNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_assignments'>assignments</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1588,32 +1767,30 @@ assignment.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="assigned_roles-instance_method">
+  <h3 class="signature " id="assigned_roles-instance_method">
   
-    - (<tt>Object</tt>) <strong>assigned_roles</strong>(user) 
+    #<strong>assigned_roles</strong>(user)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the set of roles assigned to a given user. 
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the set of roles assigned to a given user. </p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1627,8 +1804,8 @@ the user is a member of the USERS data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 249</span>
 
-<span class='kw'>def</span> <span class='id assigned_roles'>assigned_roles</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
-</span>  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_assigned_roles'>assigned_roles</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+</span>  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1636,32 +1813,30 @@ the user is a member of the USERS data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="assigned_users-instance_method">
+  <h3 class="signature " id="assigned_users-instance_method">
   
-    - (<tt>Object</tt>) <strong>assigned_users</strong>(role) 
+    #<strong>assigned_users</strong>(role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the set of users assigned to a given role. 
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the role is a member of the ROLES data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the set of users assigned to a given role. </p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the role is a member of the ROLES data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1675,8 +1850,8 @@ the role is a member of the ROLES data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 239</span>
 
-<span class='kw'>def</span> <span class='id assigned_users'>assigned_users</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='comment'>#=&gt; users
-</span>  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_assigned_users'>assigned_users</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='comment'>#=&gt; users
+</span>  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1684,39 +1859,40 @@ the role is a member of the ROLES data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="assignments-instance_method">
+  <h3 class="signature " id="assignments-instance_method">
   
-    - (<tt>Object</tt>) <strong>assignments</strong> 
+    #<strong>assignments</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the set of user role assignments.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the set of user role assignments.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-494
-495</pre>
+560
+561</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 494</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 560</span>
 
-<span class='kw'>def</span> <span class='id assignments'>assignments</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; assignments
+<span class='kw'>def</span> <span class='id identifier rubyid_assignments'>assignments</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; assignments
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1724,39 +1900,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="assignments=-instance_method">
+  <h3 class="signature " id="assignments=-instance_method">
   
-    - (<tt>Object</tt>) <strong>assignments=</strong>(assignments) 
+    #<strong>assignments=</strong>(assignments)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the user role assignments data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the user role assignments data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-502
-503</pre>
+568
+569</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 502</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 568</span>
 
-<span class='kw'>def</span> <span class='id assignments='>assignments=</span><span class='lparen'>(</span><span class='id assignments'>assignments</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_assignments='>assignments=</span><span class='lparen'>(</span><span class='id identifier rubyid_assignments'>assignments</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1764,32 +1941,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="assignments_include?-instance_method">
+  <h3 class="signature " id="assignments_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>assignments_include?</strong>(user, role) 
+    #<strong>assignments_include?</strong>(user, role)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the user is assigned to the role.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the user is assigned to the role.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -1803,13 +1981,13 @@ Required for implementations.
       <pre class="lines">
 
 
-510
-511</pre>
+576
+577</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 510</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 576</span>
 
-<span class='kw'>def</span> <span class='id assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span> 
+<span class='kw'>def</span> <span class='id identifier rubyid_assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> 
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1817,52 +1995,38 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="check_access-instance_method">
+  <h3 class="signature " id="check_access-instance_method">
   
-    - (<tt>Object</tt>) <strong>check_access</strong>(session, operation, object) 
+    #<strong>check_access</strong>(session, operation, object)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns a Boolean value meaning whether the subject of a
-given session is allowed or not to perform a given operation on a given
-object. 
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the session identifier is a member of the SESSIONS data set
-</p>
-</li>
-<li><p>
-the operation is a member of the OPS data set
-</p>
-</li>
-<li><p>
-the object is a member of the OBJS data set
-</p>
-</li>
-</ul>
-<p>
-The session’s subject has the permission to perform the operation on that
-object if and only if that permission is assigned to (at least) one of the
-session’s active roles.
-</p>
-<p>
-An implementation might use the groups that correspond to the subject’s
-active roles and their permissions as registered in the object’s access
-control list.
-</p>
+    
+<p>This function returns a Boolean value meaning whether the subject of a given session is allowed or not to perform a given operation on a given object. </p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the session identifier is a member of the SESSIONS data set</p>
+</li><li>
+<p>the operation is a member of the OPS data set</p>
+</li><li>
+<p>the object is a member of the OBJS data set</p>
+</li></ul>
+
+<p>The session’s subject has the permission to perform the operation on that object if and only if that permission is assigned to (at least) one of the session’s active roles.</p>
+
+<p>An implementation might use the groups that correspond to the subject’s active roles and their permissions as registered in the object’s access control list.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1878,10 +2042,10 @@ control list.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 227</span>
 
-<span class='kw'>def</span> <span class='id check_access'>check_access</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; boolean 
-</span>  <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id operations_include?'>operations_include?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>OperationNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id operations'>operations</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id object'>object</span><span class='comma'>,</span> <span class='id objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_check_access'>check_access</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; boolean 
+</span>  <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_operations_include?'>operations_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>OperationNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_operations'>operations</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1889,41 +2053,34 @@ control list.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="create_session-instance_method">
+  <h3 class="signature " id="create_session-instance_method">
   
-    - (<tt>Object</tt>) <strong>create_session</strong>(user, session) 
+    #<strong>create_session</strong>(user, session)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function creates a new session with a given user as owner and an
-active role set. 
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set, and
-</p>
-</li>
-<li><p>
-the session active role set is a subset of the roles assigned to that user.
-</p>
-</li>
-</ul>
-<p>
-In a RBAC implementation, the session’s active roles might actually be the 
-groups that represent those roles.
-</p>
+    
+<p>This function creates a new session with a given user as owner and an active role set. </p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set, and</p>
+</li><li>
+<p>the session active role set is a subset of the roles assigned to that user. </p>
+</li></ul>
+
+<p>In a RBAC implementation, the session’s active roles might actually be the  groups that represent those roles.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -1938,9 +2095,9 @@ groups that represent those roles.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 155</span>
 
-<span class='kw'>def</span> <span class='id create_session'>create_session</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id session_active_role_set_is_subset_of_user_role_set?'>session_active_role_set_is_subset_of_user_role_set?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionActiveRoleSetIsNotSubsetOfUserRoleSetError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_create_session'>create_session</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_session_active_role_set_is_subset_of_user_role_set?'>session_active_role_set_is_subset_of_user_role_set?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionActiveRoleSetIsNotSubsetOfUserRoleSetError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -1948,46 +2105,36 @@ groups that represent those roles.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="deassign_user-instance_method">
+  <h3 class="signature " id="deassign_user-instance_method">
   
-    - (<tt>Object</tt>) <strong>deassign_user</strong>(user, role) 
+    #<strong>deassign_user</strong>(user, role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command deletes the assignment of the user user to the role role.
-</p>
-<p>
-The command is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set 
-</p>
-</li>
-<li><p>
-the role is a member of the ROLES data set
-</p>
-</li>
-<li><p>
-and the user is assigned to the role
-</p>
-</li>
-</ul>
-<p>
-It is an implementation decision how to proceed with the sessions in which
-the session user is user and one of his/her active roles is role. The RBAC
-system could wait for such a session to terminate normally, could force its
-termination, or could inactivate the role.
-</p>
+    
+<p>This command deletes the assignment of the user user to the role role.</p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set </p>
+</li><li>
+<p>the role is a member of the ROLES data set</p>
+</li><li>
+<p>and the user is assigned to the role</p>
+</li></ul>
+
+<p>It is an implementation decision how to proceed with the sessions in which the session user is user and one of his/her active roles is role. The RBAC system could wait for such a session to terminate normally, could force its termination, or could inactivate the role.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2003,10 +2150,10 @@ termination, or could inactivate the role.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 109</span>
 
-<span class='kw'>def</span> <span class='id deassign_user'>deassign_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='id user'>user</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='id role'>role</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>AssignmentNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id role'>role</span><span class='comma'>,</span> <span class='id assignments'>assignments</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_deassign_user'>deassign_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_assignments_include?'>assignments_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>AssignmentNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_assignments'>assignments</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2014,39 +2161,136 @@ termination, or could inactivate the role.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="delete_role-instance_method">
+  <h3 class="signature " id="delete_object-instance_method">
   
-    - (<tt>Object</tt>) <strong>delete_role</strong>(role) 
+    #<strong>delete_object</strong>(object)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command deletes an existing role from the RBAC database.
-</p>
-<p>
-The command is valid if and only if
-</p>
-<ul>
-<li><p>
-the role to be deleted is a member of the /ROLES/ data set. 
-</p>
-</li>
-</ul>
-<p>
-It is an implementation decision how to proceed with the sessions in which
-the  role to be deleted is active. The RBAC system could wait for such a
-session to  terminate normally, it could force the termination of that
-session, or it could delete the role from that session while allowing the
-session to continue.
-</p>
+    
+<p>This command deletes an existing object from the RBAC database. </p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the object to be deleted is a member of the /OPS/ data set.</p>
+</li></ul>
+
+<p>The /OPS/ data set is updated.</p>
+
+<p>It is an implementation decision how to proceed with the permissions that involve the object. The RBAC system could wait for these permissions to be deleted normally, or could force delete them, etc.</p>
+
+<p>This method is not in the ANSI spec; it is optional for implemenations. It is provided here to follow the design patterns for users and roles.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+383
+384
+385</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 383</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_object'>delete_object</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> 
+  <span class='id identifier rubyid_objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_operation-instance_method">
+  
+    #<strong>delete_operation</strong>(operation)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This command deletes an existing operation from the RBAC database. </p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the operation to be deleted is a member of the /OPS/ data set.</p>
+</li></ul>
+
+<p>The /OPS/ data set is updated.</p>
+
+<p>It is an implementation decision how to proceed with the permissions that involve the operation. The RBAC system could wait for these permissions to be deleted normally, or could force delete them, etc.</p>
+
+<p>This method is not in the ANSI spec; it is optional for implemenations.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+349
+350
+351</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 349</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_operation'>delete_operation</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='rparen'>)</span> 
+  <span class='id identifier rubyid_operations_include?'>operations_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>OperationNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_operations'>operations</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_role-instance_method">
+  
+    #<strong>delete_role</strong>(role)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>This command deletes an existing role from the RBAC database.</p>
+
+<p>The command is valid if and only if</p>
+<ul><li>
+<p>the role to be deleted is a member of the /ROLES/ data set. </p>
+</li></ul>
+
+<p>It is an implementation decision how to proceed with the sessions in which the  role to be deleted is active. The RBAC system could wait for such a session to  terminate normally, it could force the termination of that session, or it could delete the role from that session while allowing the session to continue.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2060,8 +2304,8 @@ session to continue.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 77</span>
 
-<span class='kw'>def</span> <span class='id delete_role'>delete_role</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_role'>delete_role</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2069,40 +2313,34 @@ session to continue.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="delete_session-instance_method">
+  <h3 class="signature " id="delete_session-instance_method">
   
-    - (<tt>Object</tt>) <strong>delete_session</strong>(user, session) 
+    #<strong>delete_session</strong>(user, session)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function deletes a given session with a given owner user.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set
-</p>
-</li>
-<li><p>
-the session identifier is a member of the SESSIONS data set
-</p>
-</li>
-<li><p>
-the session is owned by the given user
-</p>
-</li>
-</ul>
+    
+<p>This function deletes a given session with a given owner user.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set</p>
+</li><li>
+<p>the session identifier is a member of the SESSIONS data set</p>
+</li><li>
+<p>the session is owned by the given user</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2118,10 +2356,10 @@ the session is owned by the given user
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 168</span>
 
-<span class='kw'>def</span> <span class='id delete_session'>delete_session</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotOwnedByUserError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_session'>delete_session</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotOwnedByUserError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2129,41 +2367,34 @@ the session is owned by the given user
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="delete_user-instance_method">
+  <h3 class="signature " id="delete_user-instance_method">
   
-    - (<tt>Object</tt>) <strong>delete_user</strong>(user) 
+    #<strong>delete_user</strong>(user)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command deletes an existing user from the RBAC database. 
-</p>
-<p>
-The command is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user to be deleted is a member of the /USERS/ data set.
-</p>
-</li>
-</ul>
-<p>
-The /USERS/ and /UA/  data sets and the /assigned_users/ function are
-updated. 
-</p>
-<p>
-It is an implementation decision how to proceed with the sessions owned by
-the user to be deleted. The RBAC system could wait for such a session to
-terminate  normally, or it could force its termination.
-</p>
+    
+<p>This command deletes an existing user from the RBAC database. </p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the user to be deleted is a member of the /USERS/ data set.</p>
+</li></ul>
+
+<p>The /USERS/ and /UA/  data sets and the /assigned_users/ function are updated. </p>
+
+<p>It is an implementation decision how to proceed with the sessions owned by the user to be deleted. The RBAC system could wait for such a session to terminate  normally, or it could force its termination.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2177,8 +2408,8 @@ terminate  normally, or it could force its termination.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 48</span>
 
-<span class='kw'>def</span> <span class='id delete_user'>delete_user</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> 
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_user'>delete_user</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> 
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2186,49 +2417,38 @@ terminate  normally, or it could force its termination.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="drop_active_role-instance_method">
+  <h3 class="signature " id="drop_active_role-instance_method">
   
-    - (<tt>Object</tt>) <strong>drop_active_role</strong>(user, session, role) 
+    #<strong>drop_active_role</strong>(user, session, role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function deletes a role from the active role set of a session owned by
-a given user.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set
-</p>
-</li>
-<li><p>
-the session identifier is a member of the SESSIONS data set
-</p>
-</li>
-<li><p>
-the role is a member of the ROLES data set
-</p>
-</li>
-<li><p>
-the session is owned by the user
-</p>
-</li>
-<li><p>
-the role is an active role of that session.
-</p>
-</li>
-</ul>
+    
+<p>This function deletes a role from the active role set of a session owned by a given user.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set</p>
+</li><li>
+<p>the session identifier is a member of the SESSIONS data set</p>
+</li><li>
+<p>the role is a member of the ROLES data set</p>
+</li><li>
+<p>the session is owned by the user</p>
+</li><li>
+<p>the role is an active role of that session.</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2246,12 +2466,12 @@ the role is an active role of that session.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 204</span>
 
-<span class='kw'>def</span> <span class='id drop_active_role'>drop_active_role</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotOwnedByUserError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id active_roles_include?'>active_roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ActiveRoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_drop_active_role'>drop_active_role</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotOwnedByUserError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_active_roles_include?'>active_roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ActiveRoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2259,42 +2479,34 @@ the role is an active role of that session.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="grant_permission-instance_method">
+  <h3 class="signature " id="grant_permission-instance_method">
   
-    - (<tt>Object</tt>) <strong>grant_permission</strong>(operation, object, role) 
+    #<strong>grant_permission</strong>(operation, object, role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command grants a role the permission to perform an operation on an
-object to a role.
-</p>
-<p>
-The command may be implemented as granting permissions to a group
-corresponding to that role, i.e., setting the access control list of the
-object involved.
-</p>
-<p>
-The command is valid if and only if:
-</p>
-<ul>
-<li><p>
-the pair (operation, object) represents a permission
-</p>
-</li>
-<li><p>
-the role is a member of the ROLES data set.
-</p>
-</li>
-</ul>
+    
+<p>This command grants a role the permission to perform an operation on an object to a role.</p>
+
+<p>The command may be implemented as granting permissions to a group corresponding to that role, i.e., setting the access control list of the object involved.</p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the pair (operation, object) represents a permission</p>
+</li><li>
+<p>the role is a member of the ROLES data set.</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2309,9 +2521,9 @@ the role is a member of the ROLES data set.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 125</span>
 
-<span class='kw'>def</span> <span class='id grant_permission'>grant_permission</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>OperationObjectPairDoesNotRepresentPermissionError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_grant_permission'>grant_permission</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>OperationObjectPairDoesNotRepresentPermissionError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2319,39 +2531,40 @@ the role is a member of the ROLES data set.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="objects-instance_method">
+  <h3 class="signature " id="objects-instance_method">
   
-    - (<tt>Object</tt>) <strong>objects</strong> 
+    #<strong>objects</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the OBJECTS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the OBJECTS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-558
-559</pre>
+624
+625</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 558</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 624</span>
 
-<span class='kw'>def</span> <span class='id objects'>objects</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; objects
+<span class='kw'>def</span> <span class='id identifier rubyid_objects'>objects</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; objects
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2359,39 +2572,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="objects=-instance_method">
+  <h3 class="signature " id="objects=-instance_method">
   
-    - (<tt>Object</tt>) <strong>objects=</strong>(objects) 
+    #<strong>objects=</strong>(objects)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the OBJECTS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the OBJECTS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-565
-566</pre>
+632
+633</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 565</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 632</span>
 
-<span class='kw'>def</span> <span class='id objects='>objects=</span><span class='lparen'>(</span><span class='id objects'>objects</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_objects='>objects=</span><span class='lparen'>(</span><span class='id identifier rubyid_objects'>objects</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2399,32 +2613,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="objects_include?-instance_method">
+  <h3 class="signature " id="objects_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>objects_include?</strong>(object) 
+    #<strong>objects_include?</strong>(object)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the session is a member of the OBJECTS data set.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the session is a member of the OBJECTS data set.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2438,13 +2653,13 @@ Required for implementations.
       <pre class="lines">
 
 
-573
-574</pre>
+640
+641</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 573</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 640</span>
 
-<span class='kw'>def</span> <span class='id objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id object'>object</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2452,32 +2667,33 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="operation_object_pair_represents_permission?-instance_method">
+  <h3 class="signature " id="operation_object_pair_represents_permission?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>operation_object_pair_represents_permission?</strong>(operation, object) 
+    #<strong>operation_object_pair_represents_permission?</strong>(operation, object)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the operation object pair represents a permission.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the operation object pair represents a permission.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2491,13 +2707,13 @@ Required for implementations.
       <pre class="lines">
 
 
-446
-447</pre>
+512
+513</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 446</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 512</span>
 
-<span class='kw'>def</span> <span class='id operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2505,39 +2721,40 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="operations-instance_method">
+  <h3 class="signature " id="operations-instance_method">
   
-    - (<tt>Object</tt>) <strong>operations</strong> 
+    #<strong>operations</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the OPERATIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the OPERATIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-534
-535</pre>
+600
+601</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 534</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 600</span>
 
-<span class='kw'>def</span> <span class='id operations'>operations</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
+<span class='kw'>def</span> <span class='id identifier rubyid_operations'>operations</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2545,39 +2762,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="operations=-instance_method">
+  <h3 class="signature " id="operations=-instance_method">
   
-    - (<tt>Object</tt>) <strong>operations=</strong>(operations) 
+    #<strong>operations=</strong>(operations)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the OPERATIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the OPERATIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-542
-543</pre>
+608
+609</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 542</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 608</span>
 
-<span class='kw'>def</span> <span class='id operations='>operations=</span><span class='lparen'>(</span><span class='id operations'>operations</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_operations='>operations=</span><span class='lparen'>(</span><span class='id identifier rubyid_operations'>operations</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2585,32 +2803,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="operations_include?-instance_method">
+  <h3 class="signature " id="operations_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>operations_include?</strong>(operation) 
+    #<strong>operations_include?</strong>(operation)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the session is a member of the OPERATIONS data set.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the session is a member of the OPERATIONS data set.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2624,13 +2843,13 @@ Required for implementations.
       <pre class="lines">
 
 
-550
-551</pre>
+616
+617</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 550</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 616</span>
 
-<span class='kw'>def</span> <span class='id operations_include?'>operations_include?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_operations_include?'>operations_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2638,39 +2857,40 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="permissions-instance_method">
+  <h3 class="signature " id="permissions-instance_method">
   
-    - (<tt>Object</tt>) <strong>permissions</strong> 
+    #<strong>permissions</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the PERMISSIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the PERMISSIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-422
-423</pre>
+488
+489</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 422</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 488</span>
 
-<span class='kw'>def</span> <span class='id permissions'>permissions</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+<span class='kw'>def</span> <span class='id identifier rubyid_permissions'>permissions</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2678,39 +2898,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="permissions=-instance_method">
+  <h3 class="signature " id="permissions=-instance_method">
   
-    - (<tt>Object</tt>) <strong>permissions=</strong>(permissions) 
+    #<strong>permissions=</strong>(permissions)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the PERMISSIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the PERMISSIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-430
-431</pre>
+496
+497</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 430</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 496</span>
 
-<span class='kw'>def</span> <span class='id permissions='>permissions=</span><span class='lparen'>(</span><span class='id permissions'>permissions</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_permissions='>permissions=</span><span class='lparen'>(</span><span class='id identifier rubyid_permissions'>permissions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2718,32 +2939,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="permissions_include?-instance_method">
+  <h3 class="signature " id="permissions_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>permissions_include?</strong>(operation, object) 
+    #<strong>permissions_include?</strong>(operation, object)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the permission is a member of the PERMISSIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return true iff the permission is a member of the PERMISSIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -2757,13 +2979,13 @@ Optional for implementations.
       <pre class="lines">
 
 
-438
-439</pre>
+504
+505</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 438</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 504</span>
 
-<span class='kw'>def</span> <span class='id permissions_include?'>permissions_include?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_permissions_include?'>permissions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2771,39 +2993,32 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="revoke_permission-instance_method">
+  <h3 class="signature " id="revoke_permission-instance_method">
   
-    - (<tt>Object</tt>) <strong>revoke_permission</strong>(operation, object, role) 
+    #<strong>revoke_permission</strong>(operation, object, role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This command revokes the permission to perform an operation on an object
-from the set of permissions assigned to a role. The command may be
-implemented as revoking permissions from a group corresponding to that
-role, i.e., setting the access control list of the object involved.
-</p>
-<p>
-The command is valid if and only if:
-</p>
-<ul>
-<li><p>
-the pair (operation, object) represents a permission
-</p>
-</li>
-<li><p>
-the role is a member of the ROLES data set.
-</p>
-</li>
-</ul>
+    
+<p>This command revokes the permission to perform an operation on an object from the set of permissions assigned to a role. The command may be implemented as revoking permissions from a group corresponding to that role, i.e., setting the access control list of the object involved.</p>
+
+<p>The command is valid if and only if:</p>
+<ul><li>
+<p>the pair (operation, object) represents a permission</p>
+</li><li>
+<p>the role is a member of the ROLES data set.</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2818,9 +3033,9 @@ the role is a member of the ROLES data set.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 140</span>
 
-<span class='kw'>def</span> <span class='id revoke_permission'>revoke_permission</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id role'>role</span><span class='rparen'>)</span>
-  <span class='id operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>OperationObjectPairDoesNotRepresentPermissionError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id operation'>operation</span><span class='comma'>,</span> <span class='id object'>object</span><span class='comma'>,</span> <span class='id permissions'>permissions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_revoke_permission'>revoke_permission</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_operation_object_pair_represents_permission?'>operation_object_pair_represents_permission?</span><span class='lparen'>(</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>OperationObjectPairDoesNotRepresentPermissionError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_operation'>operation</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_permissions'>permissions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2828,38 +3043,32 @@ the role is a member of the ROLES data set.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="role_operations_on_object-instance_method">
+  <h3 class="signature " id="role_operations_on_object-instance_method">
   
-    - (<tt>Object</tt>) <strong>role_operations_on_object</strong>(role, object) 
+    #<strong>role_operations_on_object</strong>(role, object)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the set of operations a given role is permitted to
-perform on a given object.  The set contains all operations granted
-directly to that role or inherited by that role from other roles. 
-</p>
-<p>
-The function is valid only if:
-</p>
-<ul>
-<li><p>
-the role is a member of the ROLES data set
-</p>
-</li>
-<li><p>
-the object is a member of the OBJS data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the set of operations a given role is permitted to perform on a given object.  The set contains all operations granted directly to that role or inherited by that role from other roles. </p>
+
+<p>The function is valid only if:</p>
+<ul><li>
+<p>the role is a member of the ROLES data set</p>
+</li><li>
+<p>the object is a member of the OBJS data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2874,9 +3083,9 @@ the object is a member of the OBJS data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 303</span>
 
-<span class='kw'>def</span> <span class='id role_operations_on_object'>role_operations_on_object</span><span class='lparen'>(</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
-</span>  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id object'>object</span><span class='comma'>,</span> <span class='id objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_role_operations_on_object'>role_operations_on_object</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
+</span>  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2884,33 +3093,30 @@ the object is a member of the OBJS data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="role_permissions-instance_method">
+  <h3 class="signature " id="role_permissions-instance_method">
   
-    - (<tt>Object</tt>) <strong>role_permissions</strong>(role) 
+    #<strong>role_permissions</strong>(role)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the set of all permissions (op, obj),  granted to or
-inherited by a given role.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the role is a member of the ROLES data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the set of all permissions (op, obj),  granted to or inherited by a given role.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the role is a member of the ROLES data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -2924,8 +3130,8 @@ the role is a member of the ROLES data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 260</span>
 
-<span class='kw'>def</span> <span class='id role_permissions'>role_permissions</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
-</span>  <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id role'>role</span><span class='comma'>,</span> <span class='id roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_role_permissions'>role_permissions</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>RoleNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_role'>role</span><span class='comma'>,</span> <span class='id identifier rubyid_roles'>roles</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2933,39 +3139,40 @@ the role is a member of the ROLES data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="roles-instance_method">
+  <h3 class="signature " id="roles-instance_method">
   
-    - (<tt>Object</tt>) <strong>roles</strong> 
+    #<strong>roles</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the ROLES data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the ROLES data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-398
-399</pre>
+464
+465</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 398</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 464</span>
 
-<span class='kw'>def</span> <span class='id roles'>roles</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+<span class='kw'>def</span> <span class='id identifier rubyid_roles'>roles</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -2973,39 +3180,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="roles=-instance_method">
+  <h3 class="signature " id="roles=-instance_method">
   
-    - (<tt>Object</tt>) <strong>roles=</strong>(roles) 
+    #<strong>roles=</strong>(roles)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the ROLES data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the ROLES data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-406
-407</pre>
+472
+473</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 406</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 472</span>
 
-<span class='kw'>def</span> <span class='id roles='>roles=</span><span class='lparen'>(</span><span class='id roles'>roles</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_roles='>roles=</span><span class='lparen'>(</span><span class='id identifier rubyid_roles'>roles</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3013,32 +3221,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="roles_include?-instance_method">
+  <h3 class="signature " id="roles_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>roles_include?</strong>(role) 
+    #<strong>roles_include?</strong>(role)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the role is a member of the ROLES data set.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the role is a member of the ROLES data set.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3052,13 +3261,13 @@ Required for implementations.
       <pre class="lines">
 
 
-414
-415</pre>
+480
+481</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 414</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 480</span>
 
-<span class='kw'>def</span> <span class='id roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id role'>role</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_roles_include?'>roles_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_role'>role</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3066,33 +3275,33 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="session_active_role_set_is_subset_of_user_role_set?-instance_method">
+  <h3 class="signature " id="session_active_role_set_is_subset_of_user_role_set?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>session_active_role_set_is_subset_of_user_role_set?</strong>(session, user) 
+    #<strong>session_active_role_set_is_subset_of_user_role_set?</strong>(session, user)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the session active role set is a subset of the roles
-assigned to that user. 
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the session active role set is a subset of the roles assigned to that user. </p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3106,13 +3315,13 @@ Required for implementations.
       <pre class="lines">
 
 
-518
-519</pre>
+584
+585</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 518</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 584</span>
 
-<span class='kw'>def</span> <span class='id session_active_role_set_is_subset_of_user_role_set?'>session_active_role_set_is_subset_of_user_role_set?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id user'>user</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_session_active_role_set_is_subset_of_user_role_set?'>session_active_role_set_is_subset_of_user_role_set?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3120,33 +3329,30 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="session_permissions-instance_method">
+  <h3 class="signature " id="session_permissions-instance_method">
   
-    - (<tt>Object</tt>) <strong>session_permissions</strong>(session) 
+    #<strong>session_permissions</strong>(session)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the permissions of the session session,  i.e., the
-permissions assigned to its active roles.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the session identifier is a member of the SESSIONS data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the permissions of the session session,  i.e., the permissions assigned to its active roles.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the session identifier is a member of the SESSIONS data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -3160,8 +3366,8 @@ the session identifier is a member of the SESSIONS data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 291</span>
 
-<span class='kw'>def</span> <span class='id session_permissions'>session_permissions</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
-</span>  <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_session_permissions'>session_permissions</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3169,32 +3375,30 @@ the session identifier is a member of the SESSIONS data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="session_roles-instance_method">
+  <h3 class="signature " id="session_roles-instance_method">
   
-    - (<tt>Object</tt>) <strong>session_roles</strong>(session) 
+    #<strong>session_roles</strong>(session)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the active roles associated with a session.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the session identifier is a member of the SESSIONS data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the active roles associated with a session.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the session identifier is a member of the SESSIONS data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -3208,8 +3412,8 @@ the session identifier is a member of the SESSIONS data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 280</span>
 
-<span class='kw'>def</span> <span class='id session_roles'>session_roles</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
-</span>  <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id session'>session</span><span class='comma'>,</span> <span class='id sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_session_roles'>session_roles</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='comment'>#=&gt; roles
+</span>  <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>SessionNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_session'>session</span><span class='comma'>,</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3217,39 +3421,40 @@ the session identifier is a member of the SESSIONS data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="sessions-instance_method">
+  <h3 class="signature " id="sessions-instance_method">
   
-    - (<tt>Object</tt>) <strong>sessions</strong> 
+    #<strong>sessions</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the SESSIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the SESSIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-454
-455</pre>
+520
+521</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 454</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 520</span>
 
-<span class='kw'>def</span> <span class='id sessions'>sessions</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; sessions
+<span class='kw'>def</span> <span class='id identifier rubyid_sessions'>sessions</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; sessions
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3257,39 +3462,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="sessions=-instance_method">
+  <h3 class="signature " id="sessions=-instance_method">
   
-    - (<tt>Object</tt>) <strong>sessions=</strong>(sessions) 
+    #<strong>sessions=</strong>(sessions)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the SESSIONS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the SESSIONS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-462
-463</pre>
+528
+529</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 462</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 528</span>
 
-<span class='kw'>def</span> <span class='id sessions='>sessions=</span><span class='lparen'>(</span><span class='id sessions'>sessions</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_sessions='>sessions=</span><span class='lparen'>(</span><span class='id identifier rubyid_sessions'>sessions</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3297,32 +3503,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="sessions_include?-instance_method">
+  <h3 class="signature " id="sessions_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>sessions_include?</strong>(session) 
+    #<strong>sessions_include?</strong>(session)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the session is a member of the SESSIONS data set.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the session is a member of the SESSIONS data set.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3336,13 +3543,13 @@ Required for implementations.
       <pre class="lines">
 
 
-470
-471</pre>
+536
+537</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 470</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 536</span>
 
-<span class='kw'>def</span> <span class='id sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id session'>session</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_sessions_include?'>sessions_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3350,38 +3557,32 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="user_operations_on_object-instance_method">
+  <h3 class="signature " id="user_operations_on_object-instance_method">
   
-    - (<tt>Object</tt>) <strong>user_operations_on_object</strong>(user, object) 
+    #<strong>user_operations_on_object</strong>(user, object)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the set of operations a given user is permitted to
-perform on a given object. The set consists of all the operations obtained
-by the user either directly, or through his/her authorized roles.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set
-</p>
-</li>
-<li><p>
-the object is a member of the OBJS data set
-</p>
-</li>
-</ul>
+    
+<p>This function returns the set of operations a given user is permitted to perform on a given object. The set consists of all the operations obtained by the user either directly, or through his/her authorized roles.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set</p>
+</li><li>
+<p>the object is a member of the OBJS data set</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -3396,9 +3597,9 @@ the object is a member of the OBJS data set
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 316</span>
 
-<span class='kw'>def</span> <span class='id user_operations_on_object'>user_operations_on_object</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
-</span>  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
-  <span class='id objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id object'>object</span><span class='comma'>,</span> <span class='id objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_user_operations_on_object'>user_operations_on_object</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='comment'>#=&gt; operations
+</span>  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
+  <span class='id identifier rubyid_objects_include?'>objects_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ObjectNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_object'>object</span><span class='comma'>,</span> <span class='id identifier rubyid_objects'>objects</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3406,32 +3607,33 @@ the object is a member of the OBJS data set
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="user_owns_session?-instance_method">
+  <h3 class="signature " id="user_owns_session?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>user_owns_session?</strong>(user, session) 
+    #<strong>user_owns_session?</strong>(user, session)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the user owns the session.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the user owns the session.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3445,13 +3647,13 @@ Required for implementations.
       <pre class="lines">
 
 
-526
-527</pre>
+592
+593</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 526</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 592</span>
 
-<span class='kw'>def</span> <span class='id user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id session'>session</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_user_owns_session?'>user_owns_session?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_session'>session</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3459,33 +3661,30 @@ Required for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="user_permissions-instance_method">
+  <h3 class="signature " id="user_permissions-instance_method">
   
-    - (<tt>Object</tt>) <strong>user_permissions</strong>(user) 
+    #<strong>user_permissions</strong>(user)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-This function returns the permissions a given user gets through his/her
-authorized roles.
-</p>
-<p>
-The function is valid if and only if:
-</p>
-<ul>
-<li><p>
-the user is a member of the USERS data set.
-</p>
-</li>
-</ul>
+    
+<p>This function returns the permissions a given user gets through his/her authorized roles.</p>
+
+<p>The function is valid if and only if:</p>
+<ul><li>
+<p>the user is a member of the USERS data set.</p>
+</li></ul>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
@@ -3499,8 +3698,8 @@ the user is a member of the USERS data set.
     <td>
       <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 270</span>
 
-<span class='kw'>def</span> <span class='id user_permissions'>user_permissions</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
-</span>  <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id user'>user</span><span class='comma'>,</span> <span class='id users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id inspect'>inspect</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_user_permissions'>user_permissions</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='comment'>#=&gt; permissions
+</span>  <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> <span class='kw'>or</span> <span class='id identifier rubyid_raise'>raise</span> <span class='const'>UserNotFoundError</span><span class='comma'>,</span> <span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='id identifier rubyid_users'>users</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3508,39 +3707,40 @@ the user is a member of the USERS data set.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="users-instance_method">
+  <h3 class="signature " id="users-instance_method">
   
-    - (<tt>Object</tt>) <strong>users</strong> 
+    #<strong>users</strong>  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return the USERS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Return the USERS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-374
-375</pre>
+440
+441</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 374</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 440</span>
 
-<span class='kw'>def</span> <span class='id users'>users</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; users
+<span class='kw'>def</span> <span class='id identifier rubyid_users'>users</span><span class='lparen'>(</span><span class='rparen'>)</span> <span class='comment'>#=&gt; users
 </span><span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3548,39 +3748,40 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="users=-instance_method">
+  <h3 class="signature " id="users=-instance_method">
   
-    - (<tt>Object</tt>) <strong>users=</strong>(users) 
+    #<strong>users=</strong>(users)  &#x21d2; <tt>Object</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Set the USERS data set.
-</p>
-<p>
-Optional for implementations.
-</p>
+    
+<p>Set the USERS data set.</p>
+
+<p>Optional for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
+
 </div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-382
-383</pre>
+448
+449</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 382</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 448</span>
 
-<span class='kw'>def</span> <span class='id users='>users=</span><span class='lparen'>(</span><span class='id users'>users</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_users='>users=</span><span class='lparen'>(</span><span class='id identifier rubyid_users'>users</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3588,32 +3789,33 @@ Optional for implementations.
 </div>
     
       <div class="method_details ">
-  <p class="signature " id="users_include?-instance_method">
+  <h3 class="signature " id="users_include?-instance_method">
   
-    - (<tt>Boolean</tt>) <strong>users_include?</strong>(user) 
+    #<strong>users_include?</strong>(user)  &#x21d2; <tt>Boolean</tt> 
   
 
   
-</p><div class="docstring">
+
+  
+</h3><div class="docstring">
   <div class="discussion">
-    <p>
-Return true iff the user is a member of the USERS data set.
-</p>
-<p>
-Required for implementations.
-</p>
+    
+<p>Return true iff the user is a member of the USERS data set.</p>
+
+<p>Required for implementations.</p>
 
 
   </div>
 </div>
 <div class="tags">
-  <h3>Returns:</h3>
+  
+<p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
-        <span class='type'>(<tt>Boolean</tt>)</span>
       
+        <span class='type'>(<tt>Boolean</tt>)</span>
       
       
       
@@ -3627,13 +3829,13 @@ Required for implementations.
       <pre class="lines">
 
 
-390
-391</pre>
+456
+457</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 390</span>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_rbac/role_based_access_control_abstract.rb', line 456</span>
 
-<span class='kw'>def</span> <span class='id users_include?'>users_include?</span><span class='lparen'>(</span><span class='id user'>user</span><span class='rparen'>)</span> 
+<span class='kw'>def</span> <span class='id identifier rubyid_users_include?'>users_include?</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span> 
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -3643,12 +3845,13 @@ Required for implementations.
   </div>
 
 </div>
-    
-    <div id="footer">
-  Generated on Sat Feb 12 16:22:28 2011 by 
+
+      <div id="footer">
+  Generated on Thu Apr 25 22:30:59 2019 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.4 (ruby-1.9.2).
+  0.9.19 (ruby-2.6.3).
 </div>
 
+    </div>
   </body>
 </html>
